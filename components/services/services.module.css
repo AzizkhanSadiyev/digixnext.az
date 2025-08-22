@@ -1,0 +1,65 @@
+/* === wrap_services section === */
+.wrap_services {
+    padding: 50px 0;
+    background: #F7F6FF;
+}
+
+.wrap_services .col_item {
+    width: calc(33.33% - 16px);
+}
+
+.wrap_services .card_item {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    overflow: hidden;
+}
+
+.wrap_services .item_content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 12px;
+}
+
+.wrap_services .item_img {
+    margin: 0 auto 0 0;
+    width: 56px;
+    padding: 12px;
+    background: #FFF;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.wrap_services .item_img img {
+    position: relative;
+}
+
+.wrap_services .item_info {
+    -webkit-line-clamp: 4;
+}
+
+@media only screen and (min-width: 561px) and (max-width: 767px) {
+    .wrap_services {
+        padding: 32px 0;
+    }
+
+    .wrap_services .col_item {
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width: 0px) and (max-width: 560px) {
+    .wrap_services {
+        padding: 32px 0;
+    }
+
+    .wrap_services .col_item {
+        width: 100%;
+    }
+}
+
+/* === wrap_services section === */

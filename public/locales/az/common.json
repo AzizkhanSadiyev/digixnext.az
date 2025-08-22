@@ -1,0 +1,175 @@
+{
+    "services": "Xidmətlər",
+    "about": "Haqqımızda",
+    "courses": "Kurslar",
+    "how_apply": "Necə müraciət etməli?",
+    "contact": "Əlaqə",
+    "apply_now": "Qəbul üçün müraciət et",
+    "apply": "Müraciət et",
+    "faq": "FAQ",
+    "school": "Məktəb",
+    "address": "Ünvan",
+    "ppolicy": "Məxfilik Siyasəti",
+    "tconditions": "Qaydalar və Şərtlər",
+    "copyright": "© Copyright 2025. Bütün hüquqlar Mil-Lisey tərəfindən qorunur",
+    "footer_info": "“Bu, perspektivi formalaşdırmaq, tənqidi düşüncəni inkişaf etdirmək və ömür boyu öyrənmə və inkişafa hazırlaşmaqdır.”",
+    "manshet": {
+        "update": "Yenilik",
+        "update_text": "2025-2026 Tədris ilinə qeydiyyat başladı",
+        "title": "Milli dəyərlərlə Qlobal təhsil – Mill Liseyində",
+        "subtitle": "IGCSE, A-Level və Milli Kurikulum proqramlarını eyni kampusdа təcrübəli müəllimlərlə öyrənin",
+        "item1": "Yay Düşərgəsi & STEAM atölyələri",
+        "item2": "AS/A-Level Foundation",
+        "item3": "İbtidai Check-Point proqramı"
+    },
+    "slider": {
+        "title": "Tərəfdaşlarımız"
+    },
+    "services_cards": {
+        "services_title_1": "Təsis ili və statusu",
+        "services_text_1": "Lisey 2015-ci ildə Təhsil Nazirliyinin lisenziyası ilə açılıb; uğurlu idarəetməsinə görə İqtisadiyyat Nazirliyi ona müddətsiz lisenziya verib, bu status ölkədə təkdir",
+        "services_title_2": "Missiya",
+        "services_text_2": "Məktəb milli dəyərlərlə qlobal bacarıqları birləşdirən müasir tədris modelini hədəfləyir, şagirdləri dünya universitetlərinə hazırlayır",
+        "services_title_3": "Dil bölmələri",
+        "services_text_3": "Azərbaycan, Rus, İngilis bölmələri; bəzi siniflərdə ekspat müəllimlər dərs deyir"
+    },
+    "why_cards": {
+        "section_title": "Niyə biz?",
+        "section_description": "Seçmə xidmətlərimiz şagirdlərin fərqli maraqlarını qarşılayır, yüksək keyfiyyətli tədrislə yanaşı tətbiqi bacarıqlar qazandırır",
+        "why_title_1": "Tam Gündüz Proqramı",
+        "why_text_1": "Şagirdlər 09:00-17:00 arası dərsdə olur, fasilələrdə isə məktəbin təmin etdiyi qidalı, isti nahar və ikindi yeməkləri ilə təmin edilir.",
+        "why_sub_1": "GÜNDƏLİK REJİM",
+        "why_title_2": "Dərslik & Tapşırıq Dəstəyi",
+        "why_text_2": "Bütün formalar, dərsliklər və iş dəftərləri məktəb tərəfindən verilir; ev tapşırıqları müəllim nəzarətində məktəbdə tamamlanır, valideyn yükünü azaldır.",
+        "why_sub_2": "AKADEMİK DƏSTƏK",
+        "why_title_3": "Psixoloji və Tibbi Nəzarət",
+        "why_text_3": "Liseydə peşəkar psixoloq və tibb bacısı daim xidmətinizdədir; şagirdlərin emosional sağlamlığı və ilkin tibbi yardımı yerindəcə təmin olunur.",
+        "why_sub_3": "AKTİV HƏYAT",
+        "why_title_4": "Klublar və Dərnəklər",
+        "why_text_4": "Şahmat, robotexnika, dram, rəqs, futbol, karate, gimnastika və daha 10-dan çox fəaliyyət: hər şagird marağına uyğun seçim tapır.",
+        "why_sub_4": "AKTİV HƏYAT",
+        "why_title_5": "Yay & Mövsümi Düşərgələr",
+        "why_text_5": "İlğəh və Mərdəkan sahillərində 4–16 yaş üçün 100-dən artıq əyləncəli və öyrədici fəaliyyətlə dolu yay, payız və qış düşərgələri keçirilir.",
+        "why_sub_5": "DÜŞƏRGƏLƏR",
+        "why_title_6": "Cambridge English Hazırlığı",
+        "why_text_6": "Məktəb Cambridge English-in rəsmi test mərkəzidir; PET, FCE, CAE imtahanlarına sistemli və nəticəyə yönəlik hazırlıq təklif olunur.",
+        "why_sub_6": "DİL HAZIRLIĞI"
+    },
+    "levels_section": {
+        "hash": "# Proqramın mərhələləri",
+        "title": "Gələcəyinizə aparan təhsil",
+        "levels": [
+            {
+                "title": "İbtidai & Aşağı orta",
+                "text": "İngiltərə Milli Kurikulumu və Check-Point imtahanları"
+            },
+            {
+                "title": "Yuxarı orta",
+                "text": "19 fənnlik Cambridge IGCSE portfeli"
+            },
+            {
+                "title": "VI form",
+                "text": "AS/A-Level və UCAS-tan tanınan öz Foundation proqramı"
+            },
+            {
+                "title": "IB/IGCSE inteqrasiyası",
+                "text": "Lisey LinkedIn profilində IB kurikulumunun tətbiq olunduğunu bildirir (namizəd mərhələsi)"
+            }
+        ]
+    },
+    "how_apply_card": {
+        "title": "Necə müraciət etmək olar?",
+        "description": "Uşağınız üçün bu möhtəşəm təhsil dünyasını kəşf etməyə hazırsınızmı?",
+        "steps": [
+            {
+                "title": "Online Müraciət",
+                "text": "Müraciət prosesi məşğul valideynlər üçün nəzərdə tutulub – rahat və sürətlidir. Sadəcə formu doldurun və uşağınızın təhsil səyahətinə başlayın.",
+                "label": "Addım 1"
+            },
+            {
+                "title": "Müsahibə",
+                "text": "Qısa bir görüşlə uşağınızın uyğunluğunu qiymətləndiririk. Məqsəd – uşağın potensialını və lisey mədəniyyətinə uyğunluğunu ölçməkdir.",
+                "label": "Addım 2"
+            },
+            {
+                "title": "Qəbul Qərarı",
+                "text": "Müsahibədən sonra qısa müddət ərzində yekun qərar sizə təqdim olunur və növbəti addımlar izah edilir.",
+                "label": "Addım 3"
+            }
+        ]
+    },
+    "corps_section": {
+        "title": "Korpuslar və infrastruktur",
+        "description": "Ən çox seçilən filiallarımız müxtəlif bacarıq və maraqlara uyğun infrastruktur təklif edir – həm tədris, həm inkişaf üçün ideal məkandır.",
+        "branches": [
+            {
+                "title": "28 May Filialı",
+                "address": "K.Səfərəliyeva 27, Nəsimi",
+                "features": "Fizika-Kimya-Biologiya lab-ları, interaktiv lövhələr",
+                "image": "/assets/images/card_1.png"
+            },
+            {
+                "title": "Gənclik",
+                "address": "Odlar Yurdu Univ. yanı",
+                "features": "İKT, STEAM otaqları",
+                "image": "/assets/images/card_2.png"
+            },
+            {
+                "title": "Mərdəkan",
+                "address": "Şimal Çimərliyi yaxınlığı",
+                "features": "Şüşə fasadlı modern kampus, idman meydançaları",
+                "image": "/assets/images/card_3.png"
+            }
+        ]
+    },
+    "faq_section": {
+        "title": "Tez-tez verilən suallar",
+        "description": "Bu bölmə istifadəçilərin ən çox verdiyi suallara cavab vermək üçün nəzərdə tutulub.",
+        "faqs": [
+            {
+                "title": "Necə hesab yarada bilərəm?",
+                "content": "Sadəcə <strong>Qeydiyyat</strong> düyməsini klikləyin və məlumatlarınızı doldurun."
+            },
+            {
+                "title": "Hansı ödəniş üsulları qəbul olunur?",
+                "content": "Biz <em>Visa</em>, <em>MasterCard</em> və PayPal qəbul edirik."
+            },
+            {
+                "title": "Kurslara qeydiyyat üçün ilkin şərtlər varmı?",
+                "content": "Bəzi kurslar üçün bəli, detalları kurs səhifəsində göstərilir."
+            },
+            {
+                "title": "Sertifikat verirsinizmi?",
+                "content": "Bəli, kursu uğurla bitirdikdən sonra sertifikat əldə edirsiniz."
+            },
+            {
+                "title": "Müəllim və digər tələbələrlə necə əlaqə qurmaq olar?",
+                "content": "Platforma daxilində forum və mesaj sistemimiz mövcuddur."
+            },
+            {
+                "title": "Rəy və təklifləri necə bildirə bilərəm?",
+                "content": "Əlaqə səhifəsi vasitəsilə rəyinizi paylaşa bilərsiniz."
+            }
+        ]
+    },
+    "form_section": {
+        "title": "Əlaqə saxlayın",
+        "description": "Bu, təkliflərimizə birbaşa töhfə verəcək məlumatlı qərarlar qəbul etməyə imkan verir.",
+        "subtitle": "24 saat ərzində cavab alacaqsınız.",
+        "contact_info": "Əlaqə məlumatı:",
+        "email": "Email:",
+        "phone": "Telefon:",
+        "fields": {
+            "fullName": "Tam ad",
+            "email": "E-poçt",
+            "subject": "Mövzu",
+            "message": "Mesaj",
+            "placeholder_fullName": "Adınızı daxil edin",
+            "placeholder_email": "E-poçtunuzu daxil edin",
+            "placeholder_subject": "Mövzunu yazın",
+            "placeholder_message": "Mesajınızı bura yazın"
+        },
+        "button": "Göndər",
+        "error_email": "Zəhmət olmasa, düzgün e-poçt ünvanı daxil edin."
+    }
+}

@@ -1,0 +1,175 @@
+{
+    "services": "Services",
+    "about": "About us",
+    "courses": "Courses",
+    "how_apply": "How to apply?",
+    "contact": "Contact us",
+    "apply_now": "Apply Now",
+    "apply": "Apply",
+    "faq": "FAQ",
+    "school": "School",
+    "address": "Address",
+    "ppolicy": "Privacy Policy",
+    "tconditions": "Terms & Conditions",
+    "copyright": "© Copyright 2025. All Rights Reserved by Mil-Lyceum",
+    "footer_info": "“ It’s about shaping a perspective, fostering critical thinking, and preparing for a lifetime of learning and growth. ”",
+    "manshet": {
+        "update": "Update",
+        "update_text": "Registration has started for the 2025–2026 academic year",
+        "title": "Global education with national values – at Mill Lyceum",
+        "subtitle": "Learn IGCSE, A-Level, and National Curriculum programs on the same campus with experienced teachers",
+        "item1": "Summer Camp & STEAM workshops",
+        "item2": "AS/A-Level Foundation",
+        "item3": "Primary Check-Point program"
+    },
+    "slider": {
+        "title": "Our partners"
+    },
+    "services_cards": {
+        "services_title_1": "Establishment and Status",
+        "services_text_1": "The lyceum was established in 2015 with a license from the Ministry of Education; due to successful management, the Ministry of Economy granted it a permanent license – a unique status in the country.",
+        "services_title_2": "Mission",
+        "services_text_2": "The school aims to combine national values with global competencies through a modern educational model and prepares students for top universities worldwide.",
+        "services_title_3": "Language Departments",
+        "services_text_3": "Azerbaijani, Russian, and English departments; some classes are taught by expat teachers."
+    },
+    "why_cards": {
+        "section_title": "Why Us?",
+        "section_description": "Our selected services address students' diverse interests, combining high-quality teaching with practical skill-building.",
+        "why_title_1": "Full-Day Program",
+        "why_text_1": "Students attend school from 09:00 to 17:00, with nutritious hot lunch and afternoon meals provided by the school.",
+        "why_sub_1": "DAILY ROUTINE",
+        "why_title_2": "Textbook & Homework Support",
+        "why_text_2": "All uniforms, textbooks, and workbooks are provided; homework is completed at school under teacher supervision, reducing parental burden.",
+        "why_sub_2": "ACADEMIC SUPPORT",
+        "why_title_3": "Psychological & Medical Care",
+        "why_text_3": "Professional psychologist and nurse are always on-site; emotional well-being and basic healthcare are ensured within the school.",
+        "why_sub_3": "ACTIVE LIFE",
+        "why_title_4": "Clubs & Societies",
+        "why_text_4": "Chess, robotics, drama, dance, football, karate, gymnastics and over 10 other activities – there's something for every student.",
+        "why_sub_4": "ACTIVE LIFE",
+        "why_title_5": "Summer & Seasonal Camps",
+        "why_text_5": "Held in Ilgah and Mardakan for ages 4–16, featuring over 100 fun and educational activities in summer, fall, and winter.",
+        "why_sub_5": "CAMPS",
+        "why_title_6": "Cambridge English Preparation",
+        "why_text_6": "The school is an official Cambridge English test center; offers structured, result-oriented prep for PET, FCE, CAE exams.",
+        "why_sub_6": "LANGUAGE TRAINING"
+    },
+    "levels_section": {
+        "hash": "# Program Stages",
+        "title": "Education that leads to your future",
+        "levels": [
+            {
+                "title": "Primary & Lower Secondary",
+                "text": "UK National Curriculum and Check-Point exams"
+            },
+            {
+                "title": "Upper Secondary",
+                "text": "19-subject Cambridge IGCSE portfolio"
+            },
+            {
+                "title": "VI Form",
+                "text": "AS/A-Level and its own UCAS-recognized Foundation program"
+            },
+            {
+                "title": "IB/IGCSE Integration",
+                "text": "The lyceum declares IB curriculum implementation on its LinkedIn profile (candidate stage)"
+            }
+        ]
+    },
+    "how_apply_card": {
+        "title": "How to Apply?",
+        "description": "Ready to explore the wonderful world of education for your child?",
+        "steps": [
+            {
+                "title": "Online Application",
+                "text": "Our application process is designed for busy parents – simple, fast, and convenient. Just fill out the form to start your child’s journey.",
+                "label": "Step 1"
+            },
+            {
+                "title": "Admission Interview",
+                "text": "We’ll conduct a short meeting to assess your child’s suitability. The goal is to understand potential and alignment with our school values.",
+                "label": "Step 2"
+            },
+            {
+                "title": "Final Decision",
+                "text": "You’ll receive a final decision shortly after the interview, along with the next steps for enrollment.",
+                "label": "Step 3"
+            }
+        ]
+    },
+    "corps_section": {
+        "title": "Campuses and Infrastructure",
+        "description": "Our most popular campuses provide an ideal environment for education and development, tailored to different skills and interests.",
+        "branches": [
+            {
+                "title": "28 May Branch",
+                "address": "27 K.Safaraliyeva, Nasimi",
+                "features": "Physics-Chemistry-Biology labs, interactive boards",
+                "image": "/assets/images/card_1.png"
+            },
+            {
+                "title": "Ganjlik",
+                "address": "Next to Odlar Yurdu University",
+                "features": "ICT, STEAM rooms",
+                "image": "/assets/images/card_2.png"
+            },
+            {
+                "title": "Mardakan",
+                "address": "Near North Beach",
+                "features": "Modern glass campus, sports grounds",
+                "image": "/assets/images/card_3.png"
+            }
+        ]
+    },
+    "faq_section": {
+        "title": "Frequently Asked Questions",
+        "description": "This section is intended to answer the most common questions from users.",
+        "faqs": [
+            {
+                "title": "How do I create an account?",
+                "content": "Just click the <strong>Sign Up</strong> button and fill in your details."
+            },
+            {
+                "title": "What payment methods are accepted?",
+                "content": "We accept <em>Visa</em>, <em>MasterCard</em>, and PayPal."
+            },
+            {
+                "title": "Are there prerequisites for enrolling in courses?",
+                "content": "Yes, some courses have requirements. Check the course page for details."
+            },
+            {
+                "title": "Do you offer certificates?",
+                "content": "Yes, you will receive a certificate upon successful course completion."
+            },
+            {
+                "title": "How do I interact with instructors and fellow students?",
+                "content": "Our platform provides forums and a messaging system."
+            },
+            {
+                "title": "How can I submit feedback or suggestions?",
+                "content": "You can share your feedback via the contact page."
+            }
+        ]
+    },
+    "form_section": {
+        "title": "Get In Touch",
+        "description": "This allows us to make informed decisions that directly contribute to our offerings.",
+        "subtitle": "We’ll get back in 24h.",
+        "contact_info": "Contact information:",
+        "email": "Email:",
+        "phone": "Phone:",
+        "fields": {
+            "fullName": "Full name",
+            "email": "Email",
+            "subject": "Subject",
+            "message": "Message",
+            "placeholder_fullName": "Enter your full name",
+            "placeholder_email": "Enter your email",
+            "placeholder_subject": "Write a subject",
+            "placeholder_message": "Write your message here"
+        },
+        "button": "Send",
+        "error_email": "Please enter a valid email address."
+    }
+}
