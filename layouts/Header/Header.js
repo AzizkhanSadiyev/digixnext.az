@@ -58,7 +58,15 @@ export default function Header() {
     }, []);
 
     const handleLangToggle = () => setLangOpen(!langOpen);
-    const handleMenuToggle = () => setMenuOpen(!menuOpen);
+    const handleMenuToggle = () => setMenuOpen(!menuOpen);  
+    
+    useEffect(() => {
+        if (menuOpen) {
+          document.body.style.overflow = "hidden";
+        } else {
+          document.body.style.overflow = "";
+        }
+      }, [menuOpen]);
 
     const handleLangSelect = (lang) => {
         i18n.changeLanguage(lang);
@@ -73,6 +81,8 @@ export default function Header() {
     };
 
     if(!currentLang) return null;
+ 
+
 
     return (
         <header className={styles.header} id="header">
@@ -81,22 +91,21 @@ export default function Header() {
                     <div className={`${styles.logo_sect} clearfix`}>
                         <a href={`/${currentLang}`} className={styles.logo}>
                             <div className={styles.logo_img}></div>
-                            <div className={styles.logo_name}>Mil-Lyceum</div>
                         </a>
                     </div>
 
                     <nav className={styles.nav_desk}>
-                        <ul className={`${styles.hdr_menu} clearfix`}>
-                            <li><a href="#services">{t('services')}</a></li>
-                            <li><a href="#about">{t('about')}</a></li>
-                            <li><a href="#courses">{t('courses')}</a></li>
-                            <li><a href="#apply">{t('how_apply')}</a></li>
-                            <li><a href="#faq">FAQ</a></li>
+                        <ul className={`${styles.hdr_menu} `}>
+                            <li><a href="#services">{t('advertiser')}</a></li>
+                            <li><a href="#about">{t('publisher')}</a></li>
+                            <li><a href="#courses">{t('ad_formats')}</a></li>
+                            <li><a href="#apply">{t('about')}</a></li>
+                            <li><a href="#faq"> {t('faq')}</a></li>
                             <li><a href="#contact">{t('contact')}</a></li>
                         </ul>
                     </nav>
 
-                    <div className={styles.head_icons}>
+                    <div className={`${styles.head_icons} ${styles.desk}`}>
                         <div
                             className={`${styles.lang_sect} ${langOpen ? styles.clicked : ""}`}
                             onClick={handleLangToggle}
@@ -113,9 +122,11 @@ export default function Header() {
                             </ul>
                         </div>
 
-                        <a href="#contact" className="btn_item secondary">
-                            <span className={styles.desk_btn}>{t('apply_now')}</span>
-                            <span className={styles.mobile_btn}>{t('apply')}</span>
+                        <a href="#contact" className={`${styles.btn_item} ${styles.desk} btn_item white`}>
+                            <span>{t('login')}</span>
+                        </a>
+                        <a href="#contact" className={`${styles.btn_item} ${styles.desk} btn_item primary`}>
+                            <span>{t('register')}</span>
                         </a>
 
                         <div className={`${styles.menu_btn} ${styles.open}`} onClick={handleMenuToggle}></div>
@@ -124,15 +135,23 @@ export default function Header() {
             </div>
 
             <nav className={`${styles.nav_mobile} ${menuOpen ? styles.transformed : ""}`}>
-                <div className={`${styles.menu_btn} ${styles.close}`} onClick={handleMenuToggle}></div>
+                <div className={styles.head_icons}>
+                    <a href="#contact" className={`${styles.btn_item} btn_item white`}>
+                        <span>{t('login')}</span>
+                    </a>
+                    <a href="#contact" className={`${styles.btn_item} btn_item primary`}>
+                        <span>{t('register')}</span>
+                    </a>
+                    <div className={`${styles.menu_btn} ${styles.close}`} onClick={handleMenuToggle}></div>
+                </div>
                 <div className={styles.mob_body}>
                     <ul className={`${styles.hdr_menu} clearfix`}>
-                        <li onClick={handleMenuToggle}><a href="#services">{t('services')}</a></li>
-                        <li onClick={handleMenuToggle}><a href={`/${currentLang}/about`}>{t('about')}</a></li>
-                        <li onClick={handleMenuToggle}><a href="#courses">{t('courses')}</a></li>
-                        <li onClick={handleMenuToggle}><a href="#apply">{t('how_apply')}</a></li>
-                        <li onClick={handleMenuToggle}><a href="#faq">FAQ</a></li>
-                        <li onClick={handleMenuToggle}><a href="#contact">{t('contact')}</a></li>
+                        <li><a href="#services">{t('advertiser')}</a></li>
+                        <li><a href="#about">{t('publisher')}</a></li>
+                        <li><a href="#courses">{t('ad_formats')}</a></li>
+                        <li><a href="#apply">{t('about')}</a></li>
+                        <li><a href="#faq"> {t('faq')}</a></li>
+                        <li><a href="#contact">{t('contact')}</a></li>
                     </ul>
                 </div>
             </nav>

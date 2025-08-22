@@ -49,19 +49,19 @@
     justify-content: center;
     width: auto;
     height: 48px;
-    padding: 10px 24px;
+    padding: 10px 20px;
     cursor: pointer;
     border: none;
     outline: none;
     background-color: transparent;
     text-align: center;
-    font-family: 'Roboto';
+    font-family: 'Inter';
     font-size: 16px;
     font-style: normal;
     font-weight: 500;
     line-height: 1.5;
-    letter-spacing: 0.1px;
-    color: #0D1714;
+    letter-spacing: 0;
+    color: #FFF;
     opacity: 1;
     border: 1px solid transparent;
     transition: all 0.25s ease-in-out;
@@ -69,11 +69,11 @@
     -moz-transition: all 0.25s ease-in-out;
     -ms-transition: all 0.25s ease-in-out;
     -o-transition: all 0.25s ease-in-out;
-    border-radius: 12px;
-    -webkit-border-radius: 12px;
-    -moz-border-radius: 12px;
-    -ms-border-radius: 12px;
-    -o-border-radius: 12px;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
 }
 
 .btn_icon {
@@ -101,33 +101,31 @@
 }
 
 .btn_item.primary {
-    color: #E8F1F7;
-    border-color: #06293D;
-    background-color: #06293D;
+    border-color: #265DD6;
+    background-color: #265DD6;
     box-shadow: 0px 2px 12px 0px rgba(22, 17, 31, 0.04);
 }
 
 .btn_item.primary:hover {
     box-shadow: 0px 3px 10px 0px rgba(22, 17, 31, 0.08);
-    border-color: #155275;
-    background-color: #155275;
+    border-color: #204EB2;
+    background-color: #204EB2;
 }
 
 .btn_item.secondary {
-    color: #fff;
-    background-color: #19115C;
-    border-color: #19115C;
+    background-color: #FD701D;
+    border-color: #FD701D;
 }
 
 .btn_item.secondary:hover {
     box-shadow: 0px 3px 10px 0px rgba(22, 17, 31, 0.08);
-    background-color: #2a208a;
-    border-color: #2a208a;
+    background-color: #be5214;
+    border-color: #be5214;
 }
 
 
 .btn_item.tertiary {
-    color: #06293D;
+    color: #374151;
     background-color: rgba(6, 41, 61, 0.08);
 }
 
@@ -137,14 +135,9 @@
 }
 
 .btn_item.white {
-    color: #0C2231;
-    border-color: #F1F2F3;
+    color: #374151;
+    border-color: #D1D5DB;
     background-color: #FFF;
-    border-radius: 66px;
-    -webkit-border-radius: 66px;
-    -moz-border-radius: 66px;
-    -ms-border-radius: 66px;
-    -o-border-radius: 66px;
 }
 
 .btn_item.white:hover {

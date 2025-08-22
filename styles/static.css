@@ -140,7 +140,7 @@
     padding: 16px;
     height: 48px;
     text-align: center;
-    font-family: 'Roboto';
+    font-family: 'Inter';
     font-size: 14px;
     font-style: normal;
     font-weight: 500;
@@ -243,7 +243,7 @@
     bottom: 24px;
     background-color: #15161A;
     text-align: left;
-    font-family: 'Roboto';
+    font-family: 'Inter';
     font-size: 16px;
     font-style: normal;
     font-weight: 500;
@@ -321,7 +321,7 @@
     min-height: 24px;
     padding: 0px 32px 0px 0;
     text-align: left;
-    font-family: "Roboto_Serif";
+    font-family: "Inter";
     font-size: 18px;
     font-style: normal;
     font-weight: 500;
@@ -390,7 +390,7 @@
     width: 100%;
     padding: 24px 0 0px 0px;
     text-align: left;
-    font-family: 'Roboto';
+    font-family: 'Inter';
     font-size: 16px;
     font-style: normal;
     font-weight: 400;

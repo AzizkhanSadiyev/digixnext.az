@@ -16,60 +16,70 @@ export default function Footer() {
                 <div className={`${styles.ftr_bottom} clearfix`}>
                     <div className={`main_center clearfix`}>
                         <div className={styles.ftr_row}>
+
                             <div className={styles.ftr_left}>
-                                <div className={`logo_sect clearfix`}>
-                                    <a href={`/${currentLang}`} className={styles.logo}>
-                                        <div className={styles.logo_img}></div>
-                                        <div className={styles.logo_name}>Mil-Lyceum</div>
-                                    </a>
+                                <div className={styles.footer_content}>
+                                    <div className={styles.footer_title}>
+                                        {t('footer_title')}
+                                    </div>
+                                    <div className={styles.footer_info}>
+                                        {t('footer_info')}
+                                    </div>
                                 </div>
-                                <div className={styles.footer_info}>
-                                    {t('footer_info')}
+                            </div>
+                            <div className={styles.ftr_right}>
+                                <div className={styles.ml_form}>
+                                    <div className={styles.ml_form_row}>
+                                        <input type="text" name="email" placeholder="E-mail ünvanını daxil et" className={styles.ml_input_item} />
+                                        <buuton type="button" className={`btn_item secondary`}>
+                                            <span>{t('subscribe')}</span>
+                                        </buuton>
+                                    </div>
                                 </div>
-                                <ul className={styles.socials}>
-                                    <li>
-                                        <a href="#">
-                                            <Image src="/assets/icons/fb_f.svg" alt="Facebook" width={24} height={24} />
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#">
-                                            <Image src="/assets/icons/lnkd_f.svg" alt="Facebook" width={24} height={24} />
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#">
-                                            <Image src="/assets/icons/tlg_f.svg" alt="Facebook" width={24} height={24} />
-                                        </a>
-                                    </li>
-                                </ul>
                             </div>
 
-                            <div className={styles.ftr_right}>
-                                <div className={styles.ftr_menu_sect}>
-                                    <ul>
-                                        <span className={styles.fm_hd}>{t('school')}</span>
-                                        <li><a href="#services">{t('services')}</a></li>
-                                        <li><a href="#about">{t('about')}</a></li>
-                                        <li><a href="#courses">{t('courses')}</a></li>
-                                        <li><a href="#contact">{t('contact')}</a></li>
-                                        <li><a href="#contact">{t('apply_now')}</a></li>
-                                    </ul>
-                                    <ul>
-                                        <span className={styles.fm_hd}>{t('address')}</span>
-                                        <li><a href="#faq">{t('faq')}</a></li>
-                                        <li><a href="#">{t('ppolicy')}</a></li>
-                                        <li><a href="#">{t('tconditions')}</a></li>
-                                    </ul>
-                                </div>
+                        </div>
+                        <div className={styles.ftr_row}>
+                            <div className={`${styles.logo_sect} clearfix`}>
+                                <a href={`/${currentLang}`} className={styles.logo}>
+                                    <div className={styles.logo_img}></div>
+                                </a>
                             </div>
+                            <div className={styles.ftr_menu_sect}>
+                                <ul>
+                                    <li><a href="#services">{t('advertiser')}</a></li>
+                                    <li><a href="#about">{t('publisher')}</a></li>
+                                    <li><a href="#courses">{t('ad_formats')}</a></li>
+                                    <li><a href="#apply">{t('about')}</a></li>
+                                    <li><a href="#faq"> {t('faq')}</a></li>
+                                    <li><a href="#contact">{t('contact')}</a></li>
+                                </ul>
+                            </div>
+                            <ul className={styles.socials}>
+                                <li>
+                                    <a href="#">
+                                        <Image src="/assets/icons/x.svg" alt="Facebook" width={24} height={24} />
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <Image src="/assets/icons/fb.svg" alt="Facebook" width={24} height={24} />
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <Image src="/assets/icons/lnkd.svg" alt="Facebook" width={24} height={24} />
+                                    </a>
+                                </li>
+                            </ul>
                         </div>
                     </div>
                 </div>
-
-                <div className={styles.copyright}>
-                    <div className={styles.copyright_inner}>
-                        {t('copyright')}
+                <div className={`main_center clearfix`}>
+                    <div className={styles.copyright}>
+                        <div className={styles.copyright_inner}>
+                            {t('copyright')}
+                        </div>
                     </div>
                 </div>
             </div>
