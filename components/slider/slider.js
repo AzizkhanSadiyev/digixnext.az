@@ -24,7 +24,7 @@ const partnerImages = [
 export default function Slider() {
     const { t } = useTranslation();
     return (
-        <div className={`section_wrap pad_top_80 ${styles.wrap_partners}`}>
+        <div className={`section_wrap ${styles.wrap_partners}`}>
             <div className={`main_center ${styles.main_center}`}>
                 <div className={`${styles.partner_title_info}`}>{t('slider.title')}</div>
 
@@ -32,7 +32,7 @@ export default function Slider() {
                     <Swiper
                         modules={[Autoplay]}
                         className="partners_slider"
-                        slidesPerView={5}
+                        slidesPerView={6}
                         spaceBetween={24}
                         loop={true}
                         speed={2000}
@@ -42,7 +42,7 @@ export default function Slider() {
                         }}
                         breakpoints={{
                             1024: {
-                                slidesPerView: 5,
+                                slidesPerView: 6,
                             },
                             768: {
                                 spaceBetween: 16,

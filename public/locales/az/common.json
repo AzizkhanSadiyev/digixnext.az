@@ -90,16 +90,13 @@
     "ppolicy": "Məxfilik Siyasəti",
     "tconditions": "Qaydalar və Şərtlər",
     "manshet": {
-        "update": "Yenilik",
-        "update_text": "2025-2026 Tədris ilinə qeydiyyat başladı",
-        "title": "Milli dəyərlərlə Qlobal təhsil – Mill Liseyində",
-        "subtitle": "IGCSE, A-Level və Milli Kurikulum proqramlarını eyni kampusdа təcrübəli müəllimlərlə öyrənin",
-        "item1": "Yay Düşərgəsi & STEAM atölyələri",
-        "item2": "AS/A-Level Foundation",
-        "item3": "İbtidai Check-Point proqramı"
+        "title": "Rəqəmsal reklamda yeni dövrü kəşf et",
+        "subtitle": "Azərbaycanda ən qabaqcıl AdTech platforması – 3.4 milyon aylıq istifadəçi, 800+ reklamverən və 300+ yayımlayıcı ilə.",
+        "button_1": "Pulsuz sınağa başla",
+        "button_2": "Daha ətraflı öyrən"
     },
     "slider": {
-        "title": "Tərəfdaşlarımız"
+        "title": "Bizə güvənən aparıcı brendlər"
     },
     "services_cards": {
         "services_title_1": "Təsis ili və statusu",

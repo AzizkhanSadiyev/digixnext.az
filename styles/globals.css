@@ -436,9 +436,9 @@ body {
   text-align: left;
   font-size: 20px;
   font-style: normal;
-  font-weight: 500;
+  font-weight: 600;
   line-height: 170%;
-  color: #0D1714;
+  color: #111827;
   opacity: 1;
   word-break: break-word;
   overflow: hidden;
@@ -456,7 +456,7 @@ body {
   font-style: normal;
   font-weight: 400;
   line-height: 170%;
-  color: #626965;
+  color: #4B5563;
   opacity: 1;
   word-break: break-word;
   overflow: hidden;
@@ -760,8 +760,10 @@ body {
 }
 
 .col {
-  display: block;
+  display: flex;
+  width: 100%;
   float: left;
+  padding: 0;
 }
 
 .col_item {
@@ -994,6 +996,10 @@ body {
   .sect_title_second {
     font-size: 46px;
   } */
+  .sect_title {
+    font-size: 24px;
+  }
+
   .sect_title_second {
     font-size: 36px;
   }
@@ -1025,16 +1031,17 @@ body {
     padding: 0 0 48px 0;
   } */
 
-  /* .sect_title {
-    padding-right: 48px;
-  } */
+  .sect_title {
+    font-size: 24px;
+  }
+
   .wrap_page_head {
     padding: 32px 0 8px 0;
   }
 
   .sect_title,
   .sect_title a {
-    font-size: 36px;
+    font-size: 24px;
   }
 
   /* .sect_title_second {

@@ -36,7 +36,7 @@ export default function Page() {
                         {Array.isArray(formats) &&
                             formats.map((format, index) => (
                                 <div className={`${styles.col} col`} key={index}>
-                                    <div className={`col_in`}>
+                                    <div className={`${styles.col_in} col_in`}>
                                         <Card key={index}
                                             title={format.title}
                                             info={format.info}

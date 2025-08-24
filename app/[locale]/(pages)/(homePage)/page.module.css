@@ -1,0 +1,184 @@
+/* === wrap_main === */
+.wrap_main {
+    padding-top: 32px;
+    background: #fff;
+}
+
+/* === wrap_main === */
+/* === wrap_cta === */
+.wrap_cta {
+    width: 100%;
+}
+
+.wrap_cta .card_item:nth-child(2n) {
+    flex-direction: row-reverse;
+}
+
+/* === wrap_cta === */
+
+/* === wrap_stats === */
+.wrap_stats {
+    background: var(--brand-800, #183D8A);
+    padding: 96px 0;
+    position: relative;
+}
+
+.wrap_stats .row {
+    gap: 32px;
+}
+
+.wrap_stats .col {
+    width: calc(25% - 24px);
+}
+
+/* === wrap_stats === */
+
+
+/* === wrap_services  === */
+.wrap_services {
+    padding: 96px 0;
+}
+
+.wrap_services .sect_header {
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding-bottom: 64px;
+}
+
+.wrap_services .sect_title {
+    margin-bottom: 16px;
+}
+
+.wrap_services .row_item {
+    align-items: stretch;
+}
+
+.wrap_services .col_in {
+    display: flex;
+    width: 100%;
+}
+
+.wrap_services .col_item {
+    width: calc(33.33% - 22px);
+}
+
+.wrap_monitor.wrap_services .sect_header {
+    justify-content: center;
+    align-items: center;
+}
+
+.wrap_monitor.wrap_services .col_item:nth-child(1) {
+    width: calc(66.66% - 12px);
+}
+
+/* === wrap_services  === */
+
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+
+    /* === wrap_stats === */
+    .wrap_stats .row {
+        gap: 16px;
+    }
+
+    .wrap_stats .col {
+        width: calc(50% - 8px);
+    }
+
+    /* === wrap_stats === */
+    /* === wrap_services  === */
+    .wrap_services {
+        padding: 48px 0;
+    }
+
+    .wrap_services .col_item {
+        width: calc(50% - 16px);
+    }
+
+    .wrap_monitor.wrap_services .col_item:nth-child(1) {
+        width: 100%;
+    }
+
+    /* === wrap_services  === */
+}
+
+@media only screen and (min-width: 561px) and (max-width: 767px) {
+
+    /* === wrap_stats === */
+    .wrap_stats.wrap_stats .row {
+        gap: 16px;
+    }
+
+    .wrap_stats.wrap_stats .col {
+        width: calc(50% - 8px);
+    }
+
+    /* === wrap_stats === */
+    /* === wrap_services  === */
+    .wrap_services {
+        padding: 48px 0;
+    }
+
+    .wrap_services .sect_header {
+        padding-bottom: 32px;
+    }
+
+    .wrap_services .col_item {
+        width: calc(50% - 16px);
+    }
+
+    .wrap_monitor.wrap_services .col_item:nth-child(1) {
+        width: 100%;
+    }
+
+    /* === wrap_services  === */
+}
+
+@media only screen and (min-width: 0px) and (max-width: 560px) {
+
+    /* === wrap_main === */
+    .wrap_main {
+        padding-top: 24px;
+    }
+
+    .wrap_main .main_center {
+        padding: 0;
+    }
+
+    /* === wrap_main === */
+    /* === wrap_stats === */
+    .wrap_stats {
+        padding: 32px 0;
+    }
+
+    .wrap_stats .row {
+        gap: 16px;
+    }
+
+    .wrap_stats .col {
+        width: calc(50% - 8px);
+    }
+
+    /* === wrap_stats === */
+    /* === wrap_services  === */
+    .wrap_services {
+        padding: 48px 0;
+    }
+
+    .wrap_services .sect_header {
+        padding-bottom: 32px;
+    }
+
+    .wrap_services .col_item {
+        width: 100%;
+    }
+
+    .wrap_monitor.wrap_services .col_item:nth-child(1) {
+        width: 100%;
+    }
+
+    /* === wrap_services  === */
+}
+
+
+/* ! Add Stats sect  */

@@ -25,27 +25,28 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    position: relative;
     background: #F3F4F6;
-    padding: 24px;
+    padding: 32px;
     overflow: hidden;
 }
 
-.format_img::before {
+/* .format_img::before {
     content: "";
     display: block;
     width: 100%;
     position: relative;
     padding-top: 82%;
-}
+} */
 
 .format_img img {
     display: block;
-    position: absolute;
+    position: relative;
     width: auto;
     height: auto;
-    max-width: 140px;
+    /* max-width: 100%; */
     max-height: 100%;
-    margin: auto;
+    margin: 0 0 0 auto;
     transition: all 0.25s ease-in-out;
     -webkit-transition: all 0.25s ease-in-out;
     -moz-transition: all 0.25s ease-in-out;
@@ -98,6 +99,10 @@
     display: -webkit-box;
     -webkit-line-clamp: 4;
     line-clamp: 4;
+}
+
+.card_revers {
+    flex-direction: column-reverse;
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1024px) {

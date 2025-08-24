@@ -6,10 +6,15 @@
 
 .row {
     gap: 32px;
+    align-items: stretch;
 }
 
 .col {
     width: calc(25% - 24px);
+}
+
+.col_in {
+    display: flex;
 }
 
 .more_f {

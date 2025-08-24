@@ -1,0 +1,477 @@
+/* === action === */
+.card_item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 64px 80px;
+    max-width: 1440px;
+    margin: 0 auto;
+    overflow: hidden;
+    background: var(--brand-800, #fff);
+    border-radius: var(--Radius-3xl, 24px);
+    -webkit-border-radius: var(--Radius-3xl, 24px);
+    -moz-border-radius: var(--Radius-3xl, 24px);
+    -ms-border-radius: var(--Radius-3xl, 24px);
+    -o-border-radius: var(--Radius-3xl, 24px);
+}
+
+.card_revers {
+    flex-direction: row-reverse;
+}
+
+.card_white {
+    background: var(--semantic-brand-700, #fff);
+}
+
+.card_dark {
+    background: #111827;
+    color: #fff;
+}
+
+.pad96 {
+    max-width: 100%;
+    padding: 96px 112px;
+    border-radius: 0 !important;
+    -webkit-border-radius: 0 !important;
+    -moz-border-radius: 0 !important;
+    -ms-border-radius: 0 !important;
+    -o-border-radius: 0 !important;
+}
+
+.sect_title_category {
+    margin-bottom: 0;
+}
+
+.item_content {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    position: relative;
+    float: left;
+    gap: 16px;
+    margin-right: auto;
+    padding: 32px 32px 32px 32px;
+    width: auto;
+    max-width: calc(100% - 580px);
+}
+
+.pad96 .item_content {
+    padding-left: 120px;
+}
+
+.item_img {
+    position: relative;
+    margin: 0 0 0 auto;
+    width: 100%;
+    max-width: 580px;
+    float: left;
+}
+
+.item_img img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    width: auto;
+    height: auto;
+    float: left;
+}
+
+.item_title {
+    color: var(--text-heading-inverted, #111827);
+    font-size: var(--Size-h2, 60px);
+    font-style: normal;
+    font-weight: 600;
+    line-height: var(--Line-height-h2, 1.2);
+    /* 120% */
+    letter-spacing: var(--Letter-spacing-h2, -2px);
+    z-index: 3;
+}
+
+.item_info {
+    -webkit-line-clamp: 4;
+    line-clamp: 4;
+    color: var(--brand-50, #4B5563);
+    font-size: var(--Size-body-large, 18px);
+    font-style: normal;
+    font-weight: 400;
+    line-height: var(--Line-height-body-large, 1.5);
+    /* 155.556% */
+    letter-spacing: var(--Letter-spacing-body-large, 0);
+    z-index: 3;
+}
+
+.description {
+    color: var(--text-body, #4B5563);
+    font-family: var(--Family-inter, Inter);
+    font-size: var(--Size-body-small, 16px);
+    font-style: normal;
+    font-weight: 400;
+    line-height: var(--Line-height-body-small, 1.5);
+    /* 150% */
+    letter-spacing: var(--Letter-spacing-body-small, 0);
+}
+
+.description ul {
+    margin: 12px 0;
+}
+
+.description li {
+    display: flex;
+    align-items: flex-start;
+    position: relative;
+    padding-left: 28px;
+    margin-bottom: 6px;
+    min-height: 16px;
+}
+
+.description li::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 4px;
+    left: 0;
+    width: 16px;
+    height: 16px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-image: url("/assets/icons/list_icon.svg");
+}
+
+.btn_sect {
+    margin-top: 8px;
+}
+
+
+.card_dark .item_title {
+    color: var(--text-heading-inverted, #F9FAFB);
+}
+
+.card_dark .description {
+    color: var(--text-heading-inverted, #E5E7EB);
+}
+
+.card_dark .description li::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 8px;
+    left: 0;
+    width: 10px;
+    height: 10px;
+    background: #E5E7EB;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+
+
+/* KART */
+.metric_card {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 4px;
+    position: absolute;
+    bottom: 20%;
+    right: -12%;
+    margin-left: auto;
+    padding: 24px;
+    color: var(--semantic-success-700, #BBF7D0);
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.5;
+    white-space: nowrap;
+    border: 6px solid rgba(255, 255, 255, 0.32);
+    background: var(--background-bg-primary, #111827);
+    box-shadow: 0 12px 15px -4px rgba(18, 26, 43, 0.10), 0 4px 6px -4px rgba(18, 26, 43, 0.05);
+    border-radius: var(--Radius-lg, 10px);
+    -webkit-border-radius: var(--Radius-lg, 10px);
+    -moz-border-radius: var(--Radius-lg, 10px);
+    -ms-border-radius: var(--Radius-lg, 10px);
+    -o-border-radius: var(--Radius-lg, 10px);
+}
+
+/* Kənardakı yüngül “halo” effekti */
+.metric_card::after {
+    content: "";
+    position: absolute;
+    inset: -4px;
+    border-radius: 16px;
+    background: rgba(255, 255, 255, 0.16);
+    filter: blur(8px);
+    z-index: -1;
+}
+
+/* BAŞLIQ SƏRTİ */
+.metric_head {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    gap: 10px;
+}
+
+/* İKON — ::before ilə (yalnız bunu dəyişəcəksən) */
+.metric_label {
+    display: inline-flex;
+    align-items: center;
+    position: relative;
+    min-height: 24px;
+    padding-left: 32px;
+    color: var(--text-placeholder, #9CA3AF);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.4;
+    /* 142.857% */
+}
+
+.metric_label::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 24px;
+    height: 24px;
+    background-image: url('/assets/icons/report.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+}
+
+/* DELTA BADGE */
+.metric_delta {
+    margin-left: auto;
+    padding: 2px 10px;
+    color: var(--semantic-success-700, #BBF7D0);
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.5;
+    white-space: nowrap;
+    border-radius: 999px;
+    -webkit-border-radius: 999px;
+    -moz-border-radius: 999px;
+    -ms-border-radius: 999px;
+    -o-border-radius: 999px;
+}
+
+.metric_delta.is_up {
+    background: #1f7a43;
+}
+
+.metric_delta.is_down {
+    background: #b3261e;
+}
+
+.metric_delta.is_neutral {
+    background: #3a3f4b;
+}
+
+/* DƏYƏR */
+.metric_value {
+    display: block;
+    width: 100%;
+    color: var(--text-heading-primary, #F9FAFB);
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.2;
+}
+
+
+@media only screen and (min-width: 1025px) and (max-width: 1248px) {
+    .card_item {
+        border-radius: var(--Radius-3xl, 16px);
+        -webkit-border-radius: var(--Radius-3xl, 16px);
+        -moz-border-radius: var(--Radius-3xl, 16px);
+        -ms-border-radius: var(--Radius-3xl, 16px);
+        -o-border-radius: var(--Radius-3xl, 16px);
+    }
+
+    .item_content {
+        max-width: 50%;
+    }
+
+    .item_img {
+        width: 50%;
+    }
+
+    .item_title {
+        font-size: 36px;
+    }
+
+    .pad96 .item_content {
+        padding-left: 32px;
+    }
+
+    .metric_card {
+        bottom: 4%;
+        right: 4%;
+    }
+
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .card_item {
+        padding: 32px 24px;
+        border-radius: var(--Radius-3xl, 16px);
+        -webkit-border-radius: var(--Radius-3xl, 16px);
+        -moz-border-radius: var(--Radius-3xl, 16px);
+        -ms-border-radius: var(--Radius-3xl, 16px);
+        -o-border-radius: var(--Radius-3xl, 16px);
+    }
+
+    .item_content {
+        max-width: 50%;
+    }
+
+    .pad96 .item_content {
+        padding-left: 32px;
+    }
+
+    .metric_card {
+        bottom: 4%;
+        right: 4%;
+    }
+
+    .item_img {
+        width: 50%;
+    }
+
+
+    .item_title {
+        font-size: 28px;
+    }
+
+}
+
+@media only screen and (min-width: 561px) and (max-width: 767px) {
+    .card_item {
+        flex-direction: column-reverse;
+        gap: 24px;
+        padding: 32px;
+        overflow: hidden;
+        border-radius: var(--Radius-3xl, 16px);
+        -webkit-border-radius: var(--Radius-3xl, 16px);
+        -moz-border-radius: var(--Radius-3xl, 16px);
+        -ms-border-radius: var(--Radius-3xl, 16px);
+        -o-border-radius: var(--Radius-3xl, 16px);
+    }
+
+    .item_content {
+        float: none;
+        margin: 0 auto;
+        padding: 0;
+        max-width: 100%;
+    }
+
+    .pad96 .item_content {
+        padding: 0;
+    }
+
+
+    .item_img img {
+        margin: 0 auto;
+        float: none;
+    }
+
+    .item_img {
+        margin: 0 auto;
+        max-width: 100%;
+        width: 100%;
+        float: none;
+        overflow: hidden;
+        border-radius: var(--Radius-3xl, 16px);
+        -webkit-border-radius: var(--Radius-3xl, 16px);
+        -moz-border-radius: var(--Radius-3xl, 16px);
+        -ms-border-radius: var(--Radius-3xl, 16px);
+        -o-border-radius: var(--Radius-3xl, 16px);
+    }
+
+    .item_title {
+        font-size: 28px;
+    }
+
+
+    .metric_card {
+        bottom: 0;
+        right: 0;
+        margin-top: 12px;
+        position: relative;
+        width: 100%;
+    }
+
+}
+
+
+
+@media only screen and (min-width: 0px) and (max-width: 560px) {
+    .card_item {
+        flex-direction: column-reverse;
+        gap: 24px;
+        padding: 32px 24px;
+        overflow: hidden;
+        border-radius: var(--Radius-3xl, 0);
+        -webkit-border-radius: var(--Radius-3xl, 0);
+        -moz-border-radius: var(--Radius-3xl, 0);
+        -ms-border-radius: var(--Radius-3xl, 0);
+        -o-border-radius: var(--Radius-3xl, 0);
+    }
+
+    .item_content {
+        float: none;
+        margin: 0 auto;
+        padding: 0;
+        max-width: 100%;
+    }
+
+    .pad96 .item_content {
+        padding: 0;
+    }
+
+    .item_img {
+        max-width: 100%;
+        width: 100%;
+        float: none;
+        overflow: hidden;
+        border-radius: var(--Radius-3xl, 16px);
+        -webkit-border-radius: var(--Radius-3xl, 16px);
+        -moz-border-radius: var(--Radius-3xl, 16px);
+        -ms-border-radius: var(--Radius-3xl, 16px);
+        -o-border-radius: var(--Radius-3xl, 16px);
+    }
+
+    .item_img img {
+        margin: 0 auto;
+        float: none;
+    }
+
+
+    .item_title {
+        font-size: 28px;
+    }
+
+    .btn_sect {
+        flex-direction: column;
+    }
+
+    .btn_item {
+        width: 100%;
+    }
+
+    .metric_card {
+        bottom: 0;
+        right: 0;
+        margin-top: 12px;
+        position: relative;
+        width: 100%;
+    }
+
+}
+
+/* === action === */

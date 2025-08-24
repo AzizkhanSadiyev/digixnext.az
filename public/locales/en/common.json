@@ -88,16 +88,13 @@
         }
     ],
     "manshet": {
-        "update": "Update",
-        "update_text": "Registration has started for the 2025–2026 academic year",
-        "title": "Global education with national values – at Mill Lyceum",
-        "subtitle": "Learn IGCSE, A-Level, and National Curriculum programs on the same campus with experienced teachers",
-        "item1": "Summer Camp & STEAM workshops",
-        "item2": "AS/A-Level Foundation",
-        "item3": "Primary Check-Point program"
+        "title": "Discover a new era in digital advertising",
+        "subtitle": "The most advanced AdTech platform in Azerbaijan – with 3.4 million monthly users, 800+ advertisers, and 300+ publishers.",
+        "button_1": "Start free trial",
+        "button_2": "Learn more"
     },
     "slider": {
-        "title": "Our partners"
+        "title": "Leading brands that trust us"
     },
     "services_cards": {
         "services_title_1": "Establishment and Status",
