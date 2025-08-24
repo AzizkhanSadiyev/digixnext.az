@@ -58,15 +58,15 @@ export default function Header() {
     }, []);
 
     const handleLangToggle = () => setLangOpen(!langOpen);
-    const handleMenuToggle = () => setMenuOpen(!menuOpen);  
-    
+    const handleMenuToggle = () => setMenuOpen(!menuOpen);
+
     useEffect(() => {
-        if (menuOpen) {
-          document.body.style.overflow = "hidden";
+        if(menuOpen) {
+            document.body.style.overflow = "hidden";
         } else {
-          document.body.style.overflow = "";
+            document.body.style.overflow = "";
         }
-      }, [menuOpen]);
+    }, [menuOpen]);
 
     const handleLangSelect = (lang) => {
         i18n.changeLanguage(lang);
@@ -81,7 +81,7 @@ export default function Header() {
     };
 
     if(!currentLang) return null;
- 
+
 
 
     return (
@@ -96,12 +96,12 @@ export default function Header() {
 
                     <nav className={styles.nav_desk}>
                         <ul className={`${styles.hdr_menu} `}>
-                            <li><a href="#services">{t('advertiser')}</a></li>
-                            <li><a href="#about">{t('publisher')}</a></li>
-                            <li><a href="#courses">{t('ad_formats')}</a></li>
-                            <li><a href="#apply">{t('about')}</a></li>
-                            <li><a href="#faq"> {t('faq')}</a></li>
-                            <li><a href="#contact">{t('contact')}</a></li>
+                            <li><a href={`/${currentLang}/advertiser`}>{t('advertiser')}</a></li>
+                            <li><a href={`/${currentLang}/about`}>{t('publisher')}</a></li>
+                            <li><a href={`/${currentLang}/ad_formats`}>{t('ad_formats')}</a></li>
+                            <li><a href={`/${currentLang}/about`}>{t('about')}</a></li>
+                            <li><a href={`/${currentLang}/faq`}> {t('faq')}</a></li>
+                            <li><a href={`/${currentLang}/contact`}> {t('contact')}</a></li>
                         </ul>
                     </nav>
 
@@ -146,12 +146,12 @@ export default function Header() {
                 </div>
                 <div className={styles.mob_body}>
                     <ul className={`${styles.hdr_menu} clearfix`}>
-                        <li><a href="#services">{t('advertiser')}</a></li>
-                        <li><a href="#about">{t('publisher')}</a></li>
-                        <li><a href="#courses">{t('ad_formats')}</a></li>
-                        <li><a href="#apply">{t('about')}</a></li>
-                        <li><a href="#faq"> {t('faq')}</a></li>
-                        <li><a href="#contact">{t('contact')}</a></li>
+                        <li><a href={`/${currentLang}/advertiser`}>{t('advertiser')}</a></li>
+                        <li><a href={`/${currentLang}/about`}>{t('publisher')}</a></li>
+                        <li><a href={`/${currentLang}/ad_formats`}>{t('ad_formats')}</a></li>
+                        <li><a href={`/${currentLang}/about`}>{t('about')}</a></li>
+                        <li><a href={`/${currentLang}/faq`}> {t('faq')}</a></li>
+                        <li><a href={`/${currentLang}/contact`}> {t('contact')}</a></li>
                     </ul>
                 </div>
             </nav>

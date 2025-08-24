@@ -4,16 +4,89 @@
     "ad_formats": "Рекламные форматы",
     "about": "О нас",
     "faq": "Частые вопросы",
-    "contact": "Контакты", 
+    "contact": "Контакты",
     "login": "Войти",
     "register": "Зарегистрироваться",
-
     "school": "Школа",
     "address": "Адрес",
     "ppolicy": "Политика Конфиденциальности",
     "tconditions": "Условия и Положения",
     "copyright": "© Copyright 2025. Все права защищены Mil-Lyceum",
     "footer_info": "«Речь идет о формировании перспективы, развитии критического мышления и подготовке к жизни, полной обучения и роста».",
+    "formats": [
+        {
+            "link": "#",
+            "img": "/assets/images/formats/cube.svg",
+            "title": "Куб Баннер",
+            "info": "3D вращающийся куб с 6 гранями. На одну грань можно добавить видео"
+        },
+        {
+            "link": "#",
+            "img": "/assets/images/formats/ecommerce.svg",
+            "title": "e-Commerce",
+            "info": "В рекламе интернет-магазинов показывается изображение товара и цена"
+        },
+        {
+            "link": "#",
+            "img": "/assets/images/formats/collapsible.svg",
+            "title": "Collapsible",
+            "info": "Интерактивный баннер, который открывается и закрывается"
+        },
+        {
+            "link": "#",
+            "img": "/assets/images/formats/display.svg",
+            "title": "Display баннер",
+            "info": "Самый распространенный стандартный веб-баннер"
+        },
+        {
+            "link": "#",
+            "img": "/assets/images/formats/expandable.svg",
+            "title": "Expandable",
+            "info": "Интерактивный баннер, расширяющийся при наведении"
+        },
+        {
+            "link": "#",
+            "img": "/assets/images/formats/background.svg",
+            "title": "Фоновый баннер",
+            "info": "Реклама на заднем фоне по бокам сайта"
+        },
+        {
+            "link": "#",
+            "img": "/assets/images/formats/catfish.svg",
+            "title": "Catfish",
+            "info": "Закрепляется в футере сайта"
+        },
+        {
+            "link": "#",
+            "img": "/assets/images/formats/clicktofullscreen.svg",
+            "title": "Click To Fullscreen",
+            "info": "При клике баннер разворачивается на весь экран"
+        },
+        {
+            "link": "#",
+            "img": "/assets/images/formats/fullscreen.svg",
+            "title": "Fullscreen",
+            "info": "Rich-media реклама, занимающая весь экран"
+        },
+        {
+            "link": "#",
+            "img": "/assets/images/formats/inpage.svg",
+            "title": "In-Page",
+            "info": "Эффективная реклама, которая появляется внутри контента при чтении"
+        },
+        {
+            "link": "#",
+            "img": "/assets/images/formats/interscroller.svg",
+            "title": "Interscroller",
+            "info": "Большой баннер с параллакс-эффектом"
+        },
+        {
+            "link": "#",
+            "img": "/assets/images/formats/pre-roll.svg",
+            "title": "Pre-roll",
+            "info": "Реклама, показываемая перед началом видео"
+        }
+    ],
     "manshet": {
         "update": "Новость",
         "update_text": "Началась регистрация на 2025–2026 учебный год",
@@ -138,10 +211,6 @@
             {
                 "title": "Есть ли предварительные условия для записи на курсы?",
                 "content": "Да, для некоторых курсов есть требования. Подробности — на странице курса."
-            },
-            {
-                "title": "Вы выдаёте сертификаты?",
-                "content": "Да, после успешного завершения курса вы получите сертификат."
             },
             {
                 "title": "Как общаться с преподавателями и другими студентами?",

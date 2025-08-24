@@ -1,0 +1,113 @@
+/* ! Add Formats Card  */
+.formats_item {
+    display: block;
+    width: 100%;
+    overflow: hidden;
+    border: 1px solid var(--border-border-secondary, #E5E7EB);
+    background: var(--background-bg-primary, #FFF);
+    border-radius: 16px;
+    -webkit-border-radius: 16px;
+    -moz-border-radius: 16px;
+    -ms-border-radius: 16px;
+    -o-border-radius: 16px;
+}
+
+.formats_item:hover .format_img img {
+    transform: scale(1.04);
+    -webkit-transform: scale(1.04);
+    -moz-transform: scale(1.04);
+    -ms-transform: scale(1.04);
+    -o-transform: scale(1.04);
+}
+
+.format_img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #F3F4F6;
+    padding: 24px;
+    overflow: hidden;
+}
+
+.format_img::before {
+    content: "";
+    display: block;
+    width: 100%;
+    position: relative;
+    padding-top: 82%;
+}
+
+.format_img img {
+    display: block;
+    position: absolute;
+    width: auto;
+    height: auto;
+    max-width: 140px;
+    max-height: 100%;
+    margin: auto;
+    transition: all 0.25s ease-in-out;
+    -webkit-transition: all 0.25s ease-in-out;
+    -moz-transition: all 0.25s ease-in-out;
+    -ms-transition: all 0.25s ease-in-out;
+    -o-transition: all 0.25s ease-in-out;
+}
+
+.format_content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    width: 100%;
+    min-height: 148px;
+    padding: 32px;
+}
+
+.fomrat_title {
+    display: block;
+    width: 100%;
+    text-align: left;
+    color: var(--text-heading-primary, #111827);
+    /* Body large/Semibold */
+    font-size: var(--Size-body-large, 18px);
+    font-style: normal;
+    font-weight: 600;
+    line-height: var(--Line-height-body-large, 1.5);
+    /* 155.556% */
+    letter-spacing: var(--Letter-spacing-body-large, 0);
+    word-break: break-word;
+}
+
+.fomrat_info {
+    display: block;
+    width: 100%;
+    /* margin-bottom: 8px; */
+    text-align: left;
+    overflow: hidden;
+    color: var(--text-body, #4B5563);
+    text-overflow: ellipsis;
+    font-size: var(--Size-body-small, 16px);
+    font-style: normal;
+    font-weight: 400;
+    line-height: var(--Line-height-body-small, 1.5);
+    /* 150% */
+    letter-spacing: var(--Letter-spacing-body-small, 0);
+    word-break: break-word;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-box-orient: vertical;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    line-clamp: 2;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .format_content {
+        padding: 24px;
+    }
+
+}
+
+@media only screen and (min-width: 561px) and (max-width: 767px) {}
+
+@media only screen and (min-width: 0px) and (max-width: 560px) {}
+
+/* ! Add Formats Card  */

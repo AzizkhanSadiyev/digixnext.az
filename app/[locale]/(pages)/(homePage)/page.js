@@ -3,15 +3,15 @@
 import { useTranslation } from 'react-i18next';
 import { useEffect, useState } from 'react';
 
-import Manshet from '../../components/manshet/manshet';
-import Slider from '../../components/slider/slider';
-import Services from '../../components/services/services';
-import Why from '../../components/why/why';
-import Levels from '../../components/levels/levels';
-import How from '../../components/how/how';
-import Corps from '../../components/corps/corps';
-import FAQ from '../../components/faq/faq';
-import Form from '../../components/form/form';
+import Manshet from '@/components/manshet/manshet';
+import Slider from '@/components/slider/slider';
+import Services from '@/components/services/services';
+import Why from '@/components/why/why';
+import Levels from '@/components/levels/levels';
+import How from '@/components/how/how';
+import Corps from '@/components/corps/corps';
+import FAQ from '@/components/faq/faq';
+import Form from '@/components/form/form';
 
 export default function Page() {
 

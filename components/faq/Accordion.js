@@ -13,7 +13,7 @@ export default function AccordionItem({ title, content, isOpen, onClick }) {
     }, [isOpen]);
 
     return (
-        <div className={`${styles.collapse_row} ${isOpen ? styles.active : ""}`} onClick={onClick}>
+        <div className={`${styles.collapse_row} ${isOpen ? styles.clp_clicked : ""}`} onClick={onClick}>
             <div className={styles.collapse_btn} >
                 <p>{title}</p>
             </div>

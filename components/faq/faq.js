@@ -5,19 +5,18 @@ import { useState } from 'react';
 import Accordion from './Accordion';
 import styles from './faq.module.css';
 
-export default function AccordionGroup() {
+export default function AccordionGroup({ title }) {
     const { t } = useTranslation();
     const [activeIndex, setActiveIndex] = useState(null);
 
     const faqs = t('faq_section.faqs', { returnObjects: true });
 
     return (
-        <div className={`section_wrap pad_top_80 pad_bottom_80 ${styles.wrap_faq}`} id="faq">
+        <div className={`section_wrap ${styles.wrap_faq}`} id="faq">
             <div className={`main_center ${styles.main_center}`}>
                 <div className={`${styles.faq_body}`}>
                     <div className={`sect_header ${styles.sect_header}`}>
-                        <h2 className="sect_title">{t('faq_section.title')}</h2>
-                        <p className="sect_info">{t('faq_section.description')}</p>
+                        <h2 className="sect_title">{title}</h2>
                     </div>
                     <div className={`sect_body`}>
                         <div className={styles.faq_items}>

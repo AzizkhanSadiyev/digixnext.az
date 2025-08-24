@@ -11,8 +11,80 @@
     "copyright": "© 2025 Digix, Inc. Bütün hüquqlar qorunur.",
     "footer_title": "Xəbərlərimizə abunə ol",
     "footer_info": "Yeniliklərdən ilk sən xəbərdar ol. İcma ilə bir addım öndə qal.",
-
-
+    "formats": [
+        {
+            "link": "#",
+            "img": "/assets/images/formats/cube.svg",
+            "title": "Kub Banner",
+            "info": "3D effekti ilə fırlanan kubun 6 üzü var. 1 üzünə video da əlavə etmək olar"
+        },
+        {
+            "link": "#",
+            "img": "/assets/images/formats/ecommerce.svg",
+            "title": "e-Commerce",
+            "info": "Online mağazalar üçün reklamda məhsulun qiyməti və şəkli göstərilir"
+        },
+        {
+            "link": "#",
+            "img": "/assets/images/formats/collapsible.svg",
+            "title": "Collapsible",
+            "info": "Açılıb-bağlanan interaktiv banner formatı"
+        },
+        {
+            "link": "#",
+            "img": "/assets/images/formats/display.svg",
+            "title": "Display banner",
+            "info": "Ən geniş yayılmış standart veb-banner formatı"
+        },
+        {
+            "link": "#",
+            "img": "/assets/images/formats/expandable.svg",
+            "title": "Expandable",
+            "info": "Üzərinə kursoru gətirəndə genişlənən interaktiv reklam"
+        },
+        {
+            "link": "#",
+            "img": "/assets/images/formats/background.svg",
+            "title": "Background",
+            "info": "Saytın sağ və sol tərəfində arxa fon reklamı"
+        },
+        {
+            "link": "#",
+            "img": "/assets/images/formats/catfish.svg",
+            "title": "Catfish",
+            "info": "Saytın futerində “bərkidilib” qalır"
+        },
+        {
+            "link": "#",
+            "img": "/assets/images/formats/clicktofullscreen.svg",
+            "title": "Click To Fullscreen",
+            "info": "Bannera basanda bütün ekranı dəyişir"
+        },
+        {
+            "link": "#",
+            "img": "/assets/images/formats/fullscreen.svg",
+            "title": "Fullscreen",
+            "info": "Bütün ekranı tutan reklamı tutan rich-media reklam"
+        },
+        {
+            "link": "#",
+            "img": "/assets/images/formats/inpage.svg",
+            "title": "In-Page",
+            "info": "Məqaləni oxuyanda kontent hissəsində görünən çox effektli reklam"
+        },
+        {
+            "link": "#",
+            "img": "/assets/images/formats/interscroller.svg",
+            "title": "Interscroller",
+            "info": "Parallaks effektli ilə görünən böyük ölçülü banner"
+        },
+        {
+            "link": "#",
+            "img": "/assets/images/formats/pre-roll.svg",
+            "title": "Pre-roll",
+            "info": "Videoya başlamazdan əvvəl göstərilən reklam"
+        }
+    ],
     "school": "Məktəb",
     "address": "Ünvan",
     "ppolicy": "Məxfilik Siyasəti",
@@ -137,14 +209,6 @@
             {
                 "title": "Hansı ödəniş üsulları qəbul olunur?",
                 "content": "Biz <em>Visa</em>, <em>MasterCard</em> və PayPal qəbul edirik."
-            },
-            {
-                "title": "Kurslara qeydiyyat üçün ilkin şərtlər varmı?",
-                "content": "Bəzi kurslar üçün bəli, detalları kurs səhifəsində göstərilir."
-            },
-            {
-                "title": "Sertifikat verirsinizmi?",
-                "content": "Bəli, kursu uğurla bitirdikdən sonra sertifikat əldə edirsiniz."
             },
             {
                 "title": "Müəllim və digər tələbələrlə necə əlaqə qurmaq olar?",

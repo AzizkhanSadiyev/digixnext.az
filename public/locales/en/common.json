@@ -4,16 +4,89 @@
     "ad_formats": "Ad Formats",
     "about": "About Us",
     "faq": "FAQ",
-    "contact": "Contact",  
+    "contact": "Contact",
     "login": "Login",
     "register": "Register",
-    
     "school": "School",
     "address": "Address",
     "ppolicy": "Privacy Policy",
     "tconditions": "Terms & Conditions",
     "copyright": "© Copyright 2025. All Rights Reserved by Mil-Lyceum",
     "footer_info": "“ It’s about shaping a perspective, fostering critical thinking, and preparing for a lifetime of learning and growth. ”",
+    "formats": [
+        {
+            "link": "#",
+            "img": "/assets/images/formats/cube.svg",
+            "title": "Cube Banner",
+            "info": "A 3D rotating cube with 6 sides. One side can also include a video"
+        },
+        {
+            "link": "#",
+            "img": "/assets/images/formats/ecommerce.svg",
+            "title": "e-Commerce",
+            "info": "Shows product image and price in online store ads"
+        },
+        {
+            "link": "#",
+            "img": "/assets/images/formats/collapsible.svg",
+            "title": "Collapsible",
+            "info": "Interactive banner that expands and collapses"
+        },
+        {
+            "link": "#",
+            "img": "/assets/images/formats/display.svg",
+            "title": "Display banner",
+            "info": "The most widely used standard web banner format"
+        },
+        {
+            "link": "#",
+            "img": "/assets/images/formats/expandable.svg",
+            "title": "Expandable",
+            "info": "Interactive banner that expands on hover"
+        },
+        {
+            "link": "#",
+            "img": "/assets/images/formats/background.svg",
+            "title": "Background",
+            "info": "Background ad displayed on both sides of the website"
+        },
+        {
+            "link": "#",
+            "img": "/assets/images/formats/catfish.svg",
+            "title": "Catfish",
+            "info": "Sticks to the footer of the website"
+        },
+        {
+            "link": "#",
+            "img": "/assets/images/formats/clicktofullscreen.svg",
+            "title": "Click To Fullscreen",
+            "info": "Clicking the banner opens it in fullscreen"
+        },
+        {
+            "link": "#",
+            "img": "/assets/images/formats/fullscreen.svg",
+            "title": "Fullscreen",
+            "info": "Rich-media ad format that covers the whole screen"
+        },
+        {
+            "link": "#",
+            "img": "/assets/images/formats/inpage.svg",
+            "title": "In-Page",
+            "info": "Highly engaging ad that appears within content while reading"
+        },
+        {
+            "link": "#",
+            "img": "/assets/images/formats/interscroller.svg",
+            "title": "Interscroller",
+            "info": "Large banner revealed with a parallax effect"
+        },
+        {
+            "link": "#",
+            "img": "/assets/images/formats/pre-roll.svg",
+            "title": "Pre-roll",
+            "info": "Ad shown before the video starts"
+        }
+    ],
     "manshet": {
         "update": "Update",
         "update_text": "Registration has started for the 2025–2026 academic year",
@@ -134,14 +207,6 @@
             {
                 "title": "What payment methods are accepted?",
                 "content": "We accept <em>Visa</em>, <em>MasterCard</em>, and PayPal."
-            },
-            {
-                "title": "Are there prerequisites for enrolling in courses?",
-                "content": "Yes, some courses have requirements. Check the course page for details."
-            },
-            {
-                "title": "Do you offer certificates?",
-                "content": "Yes, you will receive a certificate upon successful course completion."
             },
             {
                 "title": "How do I interact with instructors and fellow students?",
