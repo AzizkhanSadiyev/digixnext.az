@@ -227,10 +227,12 @@
         "fields": {
             "fullName": "Tam ad",
             "email": "E-poçt",
+            "phone": "Telefon",
             "subject": "Mövzu",
             "message": "Mesaj",
-            "placeholder_fullName": "Adınızı daxil edin",
+            "placeholder_fullName": "Ad və Soyadınızı daxil edin",
             "placeholder_email": "E-poçtunuzu daxil edin",
+            "placeholder_phone": "Telefon",
             "placeholder_subject": "Mövzunu yazın",
             "placeholder_message": "Mesajınızı bura yazın"
         },

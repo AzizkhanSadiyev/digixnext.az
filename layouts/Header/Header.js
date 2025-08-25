@@ -97,7 +97,7 @@ export default function Header() {
                     <nav className={styles.nav_desk}>
                         <ul className={`${styles.hdr_menu} `}>
                             <li><a href={`/${currentLang}/advertiser`}>{t('advertiser')}</a></li>
-                            <li><a href={`/${currentLang}/about`}>{t('publisher')}</a></li>
+                            <li><a href={`/${currentLang}/publisher`}>{t('publisher')}</a></li>
                             <li><a href={`/${currentLang}/ad_formats`}>{t('ad_formats')}</a></li>
                             <li><a href={`/${currentLang}/about`}>{t('about')}</a></li>
                             <li><a href={`/${currentLang}/faq`}> {t('faq')}</a></li>

@@ -215,6 +215,128 @@
     color: #0D1714;
 }
 
+.form {
+    display: block;
+    width: 100%;
+    max-width: 520px;
+}
+
+.btn_item {
+    display: flex;
+    width: 100%;
+    margin-top: 32px;
+}
+
+.form_help {
+    display: block;
+    width: 100%;
+    color: var(--text-placeholder, #6B7280);
+    font-family: var(--Family-inter, Inter);
+    font-size: var(--Size-caption-large, 14px);
+    font-style: normal;
+    font-weight: 400;
+    line-height: var(--Line-height-caption-large, 1.4);
+    /* 142.857% */
+    letter-spacing: var(--Letter-spacing-caption-large, 0);
+}
+
+/* 2 sütun: Ad / Soyad */
+.twoCol {
+    display: grid;
+    align-items: flex-start;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+}
+
+@media (max-width: 640px) {
+    .twoCol {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Error və helper (mövcud stillərlə uyğun) */
+.error_type {
+    color: #ef4444;
+    margin-top: 6px;
+    font-size: 13px;
+}
+
+.form_help {
+    color: #6b7280;
+    font-size: 14px;
+}
+
+/* --- intl-tel-input görünüş fixləri --- */
+.telInputReset {
+    /* iti öz containerinə köçürəcək; bu class hündürlük/radius üçün referansdır */
+}
+
+/* Container tam en */
+:global(.iti) {
+    width: 100%;
+}
+
+/* Input (dial-code ilə birlikdə) */
+:global(.iti input[type="tel"]) {
+    height: 56px !important;
+    border: 1px solid #e5e7eb !important;
+    border-radius: 12px !important;
+    box-shadow: 0 1px 2px rgba(16, 24, 40, .04) !important;
+    padding-left: 96px !important;
+    /* solda flag+code üçün yer */
+    font-size: 16px;
+}
+
+/* Fokus vizualı */
+:global(.iti input[type="tel"]:focus) {
+    border-color: #94a3b8 !important;
+    box-shadow: 0 0 0 4px rgba(59, 130, 246, .10) !important;
+    outline: none;
+}
+
+/* Sol panel (separate dial code görünüşü) */
+:global(.iti--separate-dial-code .iti__selected-flag) {
+    background: #fff;
+    border-right: 1px solid #e5e7eb;
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+    padding: 0 16px;
+    width: 92px;
+    /* flag + code üçün sabit en */
+    justify-content: center;
+}
+
+/* Flag ölçüsü və dial-code stili */
+:global(.iti__flag) {
+    transform: scale(1.05);
+}
+
+:global(.iti__selected-dial-code) {
+    font-weight: 600;
+    color: #111827;
+    margin-left: 6px;
+}
+
+/* Dropdown menyu – künclər yumru, kölgə */
+:global(.iti__country-list) {
+    border-radius: 12px;
+    box-shadow: 0 12px 40px rgba(2, 6, 23, .15);
+    border: 1px solid #e5e7eb;
+}
+
+:global(.iti__country) {
+    padding: 10px 12px;
+}
+
+:global(.iti__country:hover) {
+    background: #f3f4f6;
+}
+
+/* Disabled/invalid vəziyyətlər üçün rənglər (istəyə görə) */
+:global(.iti--allow-dropdown input:invalid) {
+    border-color: #ef4444 !important;
+}
+
 @media only screen and (min-width: 1025px) and (max-width: 1200px) {
     .wrap_contact_items .sect_title_second {
         font-size: 36px;
@@ -244,6 +366,12 @@
 
     .contact_mini_title {
         font-size: 18px;
+    }
+
+    .form {
+        display: block;
+        width: 100%;
+        max-width: 100%;
     }
 
 }

@@ -12,7 +12,6 @@ export default function Page() {
     const [ready, setReady] = useState(false);
 
 
-
     return (
         <div className="section_wrap wrap_container">
             <div className={`wrap_page_head `}>

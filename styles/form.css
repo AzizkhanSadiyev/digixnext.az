@@ -47,6 +47,11 @@
     color: #D61E24;
 }
 
+.iti__search-input {
+    height: 32px;
+    padding: 12px;
+}
+
 .show_error .itm_inp_label {
     color: #D61E24;
 }
@@ -62,7 +67,7 @@
     font-weight: 500;
     line-height: 170%;
     color: #0D1714;
-    z-index: 999999;
+    z-index: 1;
     transition: all 0.3s ease-in;
     -webkit-transition: all 0.3s ease-in;
     -moz-transition: all 0.3s ease-in;

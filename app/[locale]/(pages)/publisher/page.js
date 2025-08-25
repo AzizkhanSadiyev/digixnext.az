@@ -130,7 +130,7 @@ export default function Page() {
                     <div className={`card_item ${styles.card_item}`}>
                         <div className={`item_content ${styles.item_content}`}>
                             <h1 className={`${styles.item_title} text_center`}>
-                                Reklamçılar üçün ağıllı platforma
+                                Yayınçılar üçün ağıllı platforma
                             </h1>
                             <div className={`${styles.item_info} text_center`}>
                                 Digix – reklamçıların hədəf auditoriyasına daha dəqiq çatması, kampaniyalarını şəffaflıqla idarə etməsi və nəticələrini gücləndirməsi üçün qurulmuş müasir reklam ekosistemidir.

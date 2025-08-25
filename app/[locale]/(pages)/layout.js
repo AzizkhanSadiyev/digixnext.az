@@ -1,5 +1,6 @@
 import 'styles/globals.css';
 import 'styles/button.css';
+import 'intl-tel-input/build/css/intlTelInput.css';
 
 import Header from 'layouts/Header/Header';
 import Footer from 'layouts/Footer/Footer';

@@ -12,10 +12,6 @@ import Cta from '@/components/ActionCard/Card';
 import Monitor from '@/components/AnaliticCard/Card';
 import Levels from '@/components/ServiceCard/Card';
 
-import Why from '@/components/why/why';
-import How from '@/components/how/how';
-import Corps from '@/components/corps/corps';
-import FAQ from '@/components/faq/faq';
 import Form from '@/components/form/form';
 
 export default function Page() {
@@ -428,11 +424,7 @@ export default function Page() {
 
 
 
-      {/* <Levels />
-      <Why />
-      <How />
-      <Corps />
-      <FAQ />
+      {/* 
       <Form /> */}
 
     </div>

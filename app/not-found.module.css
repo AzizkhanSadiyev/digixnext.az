@@ -1,0 +1,58 @@
+/* Ortala ve nefes alan boşluk ver */
+.wrap {
+    min-height: 75vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 48px 16px;
+}
+
+.inner {
+    width: 100%;
+    max-width: 900px;
+    text-align: center;
+}
+
+/* Görsel alanı */
+.illustration {
+    width: 100%;
+    max-width: 340px;
+    margin: 0 auto 12px;
+}
+
+.illustration img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+/* Başlık ve alt metin */
+.title {
+    margin: 8px 0 12px;
+    font-weight: 800;
+    letter-spacing: -0.02em;
+    font-size: clamp(32px, 5vw, 56px);
+    color: #0f172a;
+}
+
+.subtitle {
+    margin: 0 auto;
+    max-width: 640px;
+    color: #64748b;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+/* Butonlar */
+.btnRow {
+    margin-top: 24px;
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+}
+
+@media (max-width: 480px) {
+    .btnRow {
+        flex-direction: column;
+    }
+}

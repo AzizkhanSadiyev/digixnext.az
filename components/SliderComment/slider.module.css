@@ -1,0 +1,213 @@
+/* === Wrapper === */
+.wrap_testimonials {
+    background-color: #111827;
+    padding: 96px 0;
+}
+
+.sect_header {
+    padding-bottom: 64px;
+}
+
+.sect_title {
+    color: #F9FAFB;
+    margin-bottom: 16px;
+}
+
+.sect_info {
+    color: #E5E7EB;
+}
+
+/* Başlıq alt mətni (istəsən istifadə et) */
+.partner_title_info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+    margin-bottom: 24px;
+    text-align: center;
+    color: #9ca3af;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.55;
+    letter-spacing: 0;
+    word-break: break-word;
+}
+
+/* Bölmə gövdəsi */
+.sect_body {
+    position: relative;
+}
+
+/* Swiper slayt hündürlükləri kartın içərinə uyğunlaşsın */
+:global(.testimonials_slider .swiper-slide) {
+    height: auto;
+}
+
+/* === Kart (testimonial) === */
+.card {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    background: #111827;
+    /* dark */
+    border: 1px solid #27304a;
+    border-radius: 16px;
+    padding: 28px;
+
+    transition: border-color .2s ease, transform .12s ease;
+}
+
+.card:hover {
+    transform: translateY(-2px);
+    border-color: #3b425e;
+}
+
+/* Ulduzlar */
+.stars {
+    display: flex;
+    gap: 6px;
+    margin-bottom: 20px;
+}
+
+.star {
+    fill: #f3b941;
+}
+
+/* Mətni */
+.text {
+    color: #d1d5db;
+    font-size: 20px;
+    line-height: 1.5;
+    margin-bottom: 28px;
+}
+
+/* İstifadəçi bölməsi */
+.user {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 16px;
+    margin-top: auto;
+}
+
+.user_text {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.avatar {
+    border-radius: 9999px;
+}
+
+.name {
+    display: block;
+    color: var(--text-heading-primary, #F9FAFB);
+    text-align: left;
+    /* Body small/Medium */
+    font-size: var(--Size-body-small, 16px);
+    font-style: normal;
+    font-weight: 500;
+    line-height: var(--Line-height-body-small, 24px);
+    /* 150% */
+    letter-spacing: var(--Letter-spacing-body-small, 0);
+}
+
+.role {
+    display: block;
+    color: var(--text-body, #E5E7EB);
+    text-align: left;
+    font-size: var(--Size-caption-large, 14px);
+    font-style: normal;
+    font-weight: 400;
+    line-height: var(--Line-height-caption-large, 20px);
+    /* 142.857% */
+    letter-spacing: var(--Letter-spacing-caption-large, 0);
+}
+
+/* === Naviqasiya oxları (aşağıda mərkəzdə) === */
+.navWrap {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 18px;
+}
+
+.navBtn {
+    width: 40px;
+    height: 40px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 9999px;
+    background: #0f172a;
+    border: 1px solid #2b324a;
+    color: #cbd5e1;
+    cursor: pointer;
+
+    transition: transform .12s ease, border-color .2s ease, background .2s ease;
+}
+
+.navBtn:hover {
+    transform: translateY(-1px);
+    border-color: #3b425e;
+}
+
+.navBtn:active {
+    transform: translateY(0);
+}
+
+/* Swiper-in disabled class-ı üçün vizual geribildirim */
+:global(.testimonials_slider .swiper-button-disabled) {
+    opacity: .5;
+    pointer-events: none;
+}
+
+/* === Köhnə partner slider sinifləri – ehtiyac olarsa qalır (zərərsiz) === */
+.partners_row {
+    display: flex;
+    align-items: flex-start;
+    gap: 24px;
+    width: 100%;
+}
+
+.partners_item {
+    width: 100%;
+}
+
+.partners_item:hover .part_img {
+    transform: scale(1.06);
+}
+
+.part_img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all .25s;
+}
+
+.part_img img {
+    display: block;
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
+    margin: auto;
+}
+
+/* === Responsive === */
+@media (min-width: 561px) and (max-width: 767px),
+(min-width: 0px) and (max-width: 560px) {
+
+    .wrap_testimonials {
+        padding: 48px 0;
+    }
+
+    .sect_header {
+        padding-bottom: 32px;
+    }
+}
