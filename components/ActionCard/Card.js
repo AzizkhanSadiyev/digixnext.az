@@ -33,42 +33,44 @@ export default function Card({
 
     return (
         <div className={rootClass} style={style}>
-            <div className={`item_content ${styles.item_content}`}>
-                {category && <div className={`sect_title_category ${styles.sect_title_category}`}>{category}</div>}
-                <h4 className={styles.item_title}>
-                    {title}
-                </h4>
-                {subtitle && <div className={styles.item_info}>{subtitle}</div>}
-                <div
-                    className={styles.description}
-                    dangerouslySetInnerHTML={{ __html: DOMPurify.sanitize(description) }}
-                />
-                <div className={`${styles.btn_sect} btn_sect`}>
-                    {button_1 && <a href="#" className={`${styles.btn_item} btn_item primary`}>
-                        <span>{button_1}</span>
-                    </a>}
-                    {button_2 && <a href="#" className={`${styles.btn_item} btn_item text_default`}>
-                        <span>{button_2}</span>
-                    </a>}
+            <div className={`${styles.card_container}`}>
+                <div className={`item_content ${styles.item_content}`}>
+                    {category && <div className={`sect_title_category ${styles.sect_title_category}`}>{category}</div>}
+                    <h4 className={styles.item_title}>
+                        {title}
+                    </h4>
+                    {subtitle && <div className={styles.item_info}>{subtitle}</div>}
+                    <div
+                        className={styles.description}
+                        dangerouslySetInnerHTML={{ __html: DOMPurify.sanitize(description) }}
+                    />
+                    <div className={`${styles.btn_sect} btn_sect`}>
+                        {button_1 && <a href="#" className={`${styles.btn_item} btn_item primary`}>
+                            <span>{button_1}</span>
+                        </a>}
+                        {button_2 && <a href="#" className={`${styles.btn_item} btn_item text_default`}>
+                            <span>{button_2}</span>
+                        </a>}
 
-                </div>
-            </div>
-
-            <div className={styles.item_img}>
-                <img src={cover} alt="Card" />
-                {metric && metric.value && (
-                    <div className={styles.metric_card}>
-                        <div className={styles.metric_head}>
-                            <span className={styles.metric_label}>{metric.label}</span>
-                            {metric.delta && (
-                                <span className={`${styles.metric_delta} ${metric.deltaType === 'down' ? styles.is_down :
-                                    metric.deltaType === 'neutral' ? styles.is_neutral : styles.is_up
-                                    }`}>{metric.delta}</span>
-                            )}
-                        </div>
-                        <div className={styles.metric_value}>{metric.value}</div>
                     </div>
-                )}
+                </div>
+
+                <div className={styles.item_img}>
+                    <img src={cover} alt="Card" />
+                    {metric && metric.value && (
+                        <div className={styles.metric_card}>
+                            <div className={styles.metric_head}>
+                                <span className={styles.metric_label}>{metric.label}</span>
+                                {metric.delta && (
+                                    <span className={`${styles.metric_delta} ${metric.deltaType === 'down' ? styles.is_down :
+                                        metric.deltaType === 'neutral' ? styles.is_neutral : styles.is_up
+                                        }`}>{metric.delta}</span>
+                                )}
+                            </div>
+                            <div className={styles.metric_value}>{metric.value}</div>
+                        </div>
+                    )}
+                </div >
             </div >
         </div >
     );

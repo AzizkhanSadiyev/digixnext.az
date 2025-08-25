@@ -7,7 +7,6 @@ export default function AdformatCrd({
     value
 }) {
 
-
     return (
         <div className={`${styles.stats_item}`} >
             <div className={`${styles.stat_content}`}>

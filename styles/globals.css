@@ -424,6 +424,7 @@ body {
 .text_center {
   justify-content: center !important;
   text-align: center !important;
+  align-items: center !important;
 }
 
 .font_48 {

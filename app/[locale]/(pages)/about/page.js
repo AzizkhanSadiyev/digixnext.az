@@ -4,12 +4,9 @@ import { useTranslation } from 'react-i18next';
 import { useEffect, useState } from 'react';
 import styles from './page.module.css';
 
-import Manshet from '@/components/manshet/manshet';
-import Slider from '@/components/slider/slider';
 import Stats from '@/components/StatsCard/Card';
 import Services from '@/components/AdvantCard/Card';
 import Cta from '@/components/ActionCard/Card';
-// import Monitor from '@/components/AnaliticCard/Card';
 import Levels from '@/components/ServiceCard/Card';
 
 
@@ -213,18 +210,30 @@ export default function Page() {
         <div className="section_wrap wrap_container">
 
             {/* manshet */}
-            <div className={`section_wrap ${styles.wrap_main}`}>
-                <div className={`main_center ${styles.main_center}`} >
-                    <div className="sect_body">
-                        <Manshet />
+            <div className={`section_wrap ${styles.wrap_main_head}`}>
+                <div className="sect_body">
+                    <div className={`card_item ${styles.card_item}`}>
+                        <div className={`item_content ${styles.item_content}`}>
+                            <h1 className={`${styles.item_title} text_center`}>
+                                Azərbaycanın proqramatik reklam platforması
+                            </h1>
+                            <div className={`${styles.item_info} text_center`}>
+                                Digix – reklamverənlər və yayınçıları bir araya gətirən, şəffaflıq, təhlükəsizlik və effektivlik üzərində qurulmuş müasir platformadır.
+                            </div>
+                            <div className={`${styles.btn_sect} btn_sect`}>
+                                <a href="#" className={`${styles.btn_item} btn_item primary`}>
+                                    <span>İndi başlayın</span>
+                                </a>
+                                <a href="#" className={`${styles.btn_item} btn_item text_default`}>
+                                    <span>Daha ətraflı</span>
+                                </a>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
             </div>
             {/* manshet */}
-
-            {/* slider */}
-            {/* <Slider /> */}
-            {/* slider */}
 
             {/* stats */}
             <div className={`section_wrap ${styles.wrap_stats}`}>
@@ -239,6 +248,7 @@ export default function Page() {
                                             <Stats key={index}
                                                 value={stat.value}
                                                 title={stat.title}
+                                                tone="white"
                                             />
                                         </div>
                                     </div>
@@ -308,7 +318,6 @@ export default function Page() {
             </div>
             {/* services */}
 
-
             {/* Safety */}
             <div className={`section_wrap ${styles.wrap_safety}`}>
                 <div className={`main_center`}>
@@ -357,7 +366,7 @@ export default function Page() {
 
             {/* Safety */}
             <div className={`section_wrap ${styles.wrap_start}`}>
-                <div className={`main_center`}>
+                <div className={`${styles.main_center} main_center`}>
                     <div className={`${styles.sect_header} sect_header`}>
                         <h4 className={`${styles.sect_title} sect_title text_center`}>Digix-ə qoşul və reklamına başla</h4>
                         <p className="sect_info text_center">

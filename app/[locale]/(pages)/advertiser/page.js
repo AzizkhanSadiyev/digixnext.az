@@ -4,13 +4,11 @@ import { useTranslation } from 'react-i18next';
 import { useEffect, useState } from 'react';
 import styles from './page.module.css';
 
-import Manshet from '@/components/manshet/manshet';
+import Feature from '@/components/FeatureCard/Card';
 import Slider from '@/components/slider/slider';
 import Stats from '@/components/StatsCard/Card';
-import Services from '@/components/AdvantCard/Card';
 import Cta from '@/components/ActionCard/Card';
 // import Monitor from '@/components/AnaliticCard/Card';
-import Levels from '@/components/ServiceCard/Card';
 
 
 export default function Page() {
@@ -42,36 +40,21 @@ export default function Page() {
             "title": "Unikal brend"
         }
     ];
-    const services = [
+    const features = [
         {
-            "icon": "/assets/icons/icon_service_1.svg",
-            "title": "Media",
-            "description": "Dinamik reklamlar, rich-media və OLV formatları ilə auditoriyaya çat."
+            "icon": "/assets/icons/feature_1.svg",
+            "title": "Tam nəzarət",
+            "description": "Kampaniyalarınızı istədiyiniz an idarə edin, büdcənizin necə xərcləndiyini dəqiq görün."
         },
         {
-            "icon": "/assets/icons/icon_service_2.svg",
-            "title": "Data",
-            "description": "Demoqrafik, davranış və açar sözlə hədəflənmiş reklam imkanları."
+            "icon": "/assets/icons/feature_2.svg",
+            "title": "Auditoriya ilə bağ",
+            "description": "Mesajınızı düzgün insanlara çatdırın, daha güclü əlaqə qurun və brendinizin təsirini artırın."
         },
         {
-            "icon": "/assets/icons/icon_service_3.svg",
-            "title": "Supply & Integrations",
-            "description": "300+ yerli sayt və DV360, Meta, TikTok, Google kimi qlobal platformalarla inteqrasiya."
-        },
-        {
-            "icon": "/assets/icons/icon_service_4.svg",
-            "title": "DOOH Platform",
-            "description": "Açıq hava reklamlarında ölçmə, izləmə və hədəfləmə imkanları."
-        },
-        {
-            "icon": "/assets/icons/icon_service_5.svg",
-            "title": "Qabaqcıl Analitika",
-            "description": "Kampaniyaların qruplaşdırılmış analitikası və real vaxtda performans monitorinqi."
-        },
-        {
-            "icon": "/assets/icons/icon_service_6.svg",
-            "title": "Çapraz-Kanal Retargeting",
-            "description": "LED ekranlar və veb istifadəsini birləşdirərək vahid reklam yolçuluğu yaradın."
+            "icon": "/assets/icons/feature_3.svg",
+            "title": "Strateji güc",
+            "description": "Sadəcə nəticə deyil, uzunmüddətli böyümə üçün ölçülə bilən və dayanıqlı strategiyalar qurun."
         }
     ];
     const ctactions = [
@@ -136,75 +119,6 @@ export default function Page() {
             }
         }
     ];
-    const monitors = [
-        {
-            "img": "/assets/images/monitor_1.png",
-            "title": "Real vaxt izləmə",
-            "info": "LED monitorlar vasitəsilə hərəkəti, izləyici sayını və reklam görünməsini anında ölçün."
-        },
-        {
-            "img": "/assets/images/monitor_2.png",
-            "title": "Vizuallaşdırılmış hesabatlar",
-            "info": "Dashboard üzərindən nəticələri aydın qrafiklər və diaqramlarla izləyin."
-        },
-        {
-            "img": "/assets/images/monitor_3.png",
-            "title": "Auditoriya analizi",
-            "info": "Smart kameralar və routerlər vasitəsilə auditoriyanın davranışlarını öyrənin."
-        },
-        {
-            "img": "/assets/images/monitor_4.png",
-            "title": "Performans göstəriciləri",
-            "info": "GRP, OTS kimi əsas metriklərlə kampaniyalarınızın effektivliyini izləyin."
-        },
-        {
-            "img": "/assets/images/monitor_5.png",
-            "title": "Media izləmə",
-            "info": "Brendiniz haqqında xəbərləri izləyin və WhatsApp vasitəsilə anında bildirişlər alın."
-        }
-    ];
-    const levels = [
-        {
-            "title": "Proqrammatik Reklam (RTB)",
-            "info": "Real vaxtda avtomatlaşdırılmış reklam alışı."
-        },
-        {
-            "title": "Rəqəmsal Kreativ İstehsal",
-            "info": "Banner, video və rich-media hazırlanması."
-        },
-        {
-            "title": "DOOH Reklam (Outdoor)",
-            "info": "LED və açıq hava ekranlarında reklam."
-        },
-        {
-            "title": "Reklam İdarəsi və Analitika",
-            "info": "Kampaniyaların performans izlənməsi."
-        },
-        {
-            "title": "DMP (Data Management Platform)",
-            "info": "Məlumatların idarəsi və hədəflənməsi."
-        },
-        {
-            "title": "Meta, TikTok, DV360 dəstəyi",
-            "info": "Qlobal platformalarla tam inteqrasiya."
-        },
-        {
-            "title": "Media Monitoring",
-            "info": "Brendiniz barədə medianı izləyin."
-        },
-        {
-            "title": "Universal Pixel",
-            "info": "Çoxkanallı izləmə və dəqiq hesabatlar."
-        },
-        {
-            "title": "Çapraz-Kanal Retargeting",
-            "info": "LED ekran + sosial media reklamı birləşməsi."
-        },
-        {
-            "title": "Outdoor izləmə və sayma",
-            "info": "Ətraf auditoriyanın real vaxt ölçümü."
-        }
-    ];
 
 
     if(!ready) return null;
@@ -213,18 +127,34 @@ export default function Page() {
         <div className="section_wrap wrap_container">
 
             {/* manshet */}
-            <div className={`section_wrap ${styles.wrap_main}`}>
-                <div className={`main_center ${styles.main_center}`} >
-                    <div className="sect_body">
-                        <Manshet />
+            <div className={`section_wrap ${styles.wrap_main_head}`}>
+                <div className="sect_body">
+                    <div className={`card_item ${styles.card_item}`}>
+                        <div className={`item_content ${styles.item_content}`}>
+                            <h1 className={`${styles.item_title} text_center`}>
+                                Reklamçılar üçün ağıllı platforma
+                            </h1>
+                            <div className={`${styles.item_info} text_center`}>
+                                Digix – reklamçıların hədəf auditoriyasına daha dəqiq çatması, kampaniyalarını şəffaflıqla idarə etməsi və nəticələrini gücləndirməsi üçün qurulmuş müasir reklam ekosistemidir.
+                            </div>
+                            <div className={`${styles.btn_sect} btn_sect`}>
+                                <a href="#" className={`${styles.btn_item} btn_item primary`}>
+                                    <span>Reklama başla</span>
+                                </a>
+                                <a href="#" className={`${styles.btn_item} btn_item text_default`}>
+                                    <span>Daha ətraflı</span>
+                                </a>
+                            </div>
+                        </div>
+
+                        {/* <div className={styles.item_img}>
+                            <img src="/assets/images/main.png" alt="Manshet" />
+                        </div> */}
+
                     </div>
                 </div>
             </div>
             {/* manshet */}
-
-            {/* slider */}
-            {/* <Slider /> */}
-            {/* slider */}
 
             {/* stats */}
             <div className={`section_wrap ${styles.wrap_stats}`}>
@@ -239,6 +169,7 @@ export default function Page() {
                                             <Stats key={index}
                                                 value={stat.value}
                                                 title={stat.title}
+                                                tone="white"
                                             />
                                         </div>
                                     </div>
@@ -267,7 +198,7 @@ export default function Page() {
                                 button_2={cta.button_2}
                                 padding
                                 {...(index === 1
-                                    ? { layout: 'reverse', tone: 'dark', padding: true }
+                                    ? { layout: 'reverse', tone: 'light', padding: true }
                                     : { layout: 'default', tone: 'light' })}
                             />
                         ))}
@@ -275,28 +206,32 @@ export default function Page() {
                 </div>
             </div>
             {/* action */}
+            
+            {/* slider */}
+            <Slider />
+            {/* slider */}
 
-            {/* services */}
-            <div className={`section_wrap ${styles.wrap_services}`}>
+            {/* features */}
+            <div className={`section_wrap ${styles.wrap_services} ${styles.wrap_features}`}>
                 <div className={`main_center`}>
-                    <div className={`${styles.sect_header} sect_header`}>
-                        <div className="sect_title_category ">Həll yığını</div>
-                        <h1 className={`${styles.sect_title} sect_title`}>Hər şey miqyaslama üçün lazım olan</h1>
-                        <p className="sect_info ">
-                            Uğurunuzu artırmaq üçün çevik həllər təqdim edirik – real vaxt analitikası, inteqrasiya olunmuş ekosistem və tam miqyaslı izləmə ilə.
+                    <div className={`${styles.sect_header} sect_header text_center`}>
+                        <div className={`${styles.sect_title_category} sect_title_category text_center`}>Features </div>
+                        <h4 className={`${styles.sect_title} sect_title text_center`}>Reklamçılar üçün üstünlüklərimiz</h4>
+                        <p className="sect_info text_center">
+                            Digix, reklamçılara yalnız rəqəmləri deyil, real biznes dəyəri qazandıran həllər təqdim edir.
                         </p>
                     </div>
                     <div className="sect_body">
                         <div className={`${styles.row_item}  ${styles.gap_32} row_item gap_32`}>
 
-                            {Array.isArray(services) &&
-                                services.map((service, index) => (
+                            {Array.isArray(features) &&
+                                features.map((feature, index) => (
                                     <div className={`${styles.col_item} col_item`} key={index}>
                                         <div className={`${styles.col_in} col_in`}>
-                                            <Services key={index}
-                                                title={service.title}
-                                                description={service.description}
-                                                icon={service.icon}
+                                            <Feature key={index}
+                                                title={feature.title}
+                                                description={feature.description}
+                                                icon={feature.icon}
                                             />
                                         </div>
                                     </div>
@@ -306,58 +241,11 @@ export default function Page() {
                     </div>
                 </div>
             </div>
-            {/* services */}
-
-
-            {/* Safety */}
-            <div className={`section_wrap ${styles.wrap_safety}`}>
-                <div className={`main_center`}>
-                    <div className={`${styles.safety_item}`}>
-                        <h4 className={`${styles.safety_title} `}>Brand Safety & Security</h4>
-                        <p className={`${styles.safety_info} `}>
-                            Digix Azərbaycanda IAS və DoubleVerify tətbiq edən ilk platformadır. Yüksək təhlükəsizlik standartları ilə brend reputasiyanızı hər reklam yerləşdirilməsində qoruyuruq
-                        </p>
-                    </div>
-                </div>
-            </div>
-            {/* Safety */}
-
-            {/* Levels */}
-            <div className={`section_wrap ${styles.wrap_levels}`}>
-                <div className={`main_center`}>
-                    <div className={`${styles.flex_body} gap_32`}>
-                        <div className={`${styles.sect_header} sect_header`}>
-                            <div className={`${styles.sect_title_category} sect_title_category`}>Digix</div>
-                            <h4 className={`${styles.sect_title} sect_title`}>Xidmətlərimiz</h4>
-                            <p className="sect_info ">
-                                Digix reklam platforması ilə biznesinizi böyütmək üçün ən müasir rəqəmsal həlləri təqdim edirik.
-                            </p>
-                        </div>
-                        <div className={`${styles.sect_body} sect_body`}>
-                            <div className={`${styles.row_item} ${styles.gap_32} row_item gap_32`}>
-
-                                {Array.isArray(levels) &&
-                                    levels.map((level, index) => (
-                                        <div className={`${styles.col_item} col_item`} key={index}>
-                                            <div className={`${styles.col_in} col_in`}>
-                                                <Levels key={index}
-                                                    title={level.title}
-                                                    info={level.info}
-                                                />
-                                            </div>
-                                        </div>
-                                    ))}
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            {/* Levels */}
+            {/* features */}
 
             {/* Safety */}
             <div className={`section_wrap ${styles.wrap_start}`}>
-                <div className={`main_center`}>
+                <div className={`${styles.main_center} main_center`}>
                     <div className={`${styles.sect_header} sect_header`}>
                         <h4 className={`${styles.sect_title} sect_title text_center`}>Digix-ə qoşul və reklamına başla</h4>
                         <p className="sect_info text_center">

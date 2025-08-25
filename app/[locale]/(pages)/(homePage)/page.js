@@ -407,7 +407,7 @@ export default function Page() {
 
       {/* Safety */}
       <div className={`section_wrap ${styles.wrap_start}`}>
-        <div className={`main_center`}>
+        <div className={`${styles.main_center} main_center`}>
           <div className={`${styles.sect_header} sect_header`}>
             <h4 className={`${styles.sect_title} sect_title text_center`}>Digix-ə qoşul və reklamına başla</h4>
             <p className="sect_info text_center">
