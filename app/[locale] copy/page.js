@@ -7,7 +7,7 @@ import Manshet from '../../components/manshet/manshet';
 import Slider from '../../components/slider/slider';
 import Services from '../../components/AdvantCard/Card';
 import Why from '../../components/why/why';
-import Levels from '../../components/levels/levels';
+import Levels from '../../components/ServiceCard/Card';
 import How from '../../components/how/how';
 import Corps from '../../components/corps/corps';
 import FAQ from '../../components/faq/faq';

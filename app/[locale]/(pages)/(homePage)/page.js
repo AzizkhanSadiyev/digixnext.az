@@ -10,9 +10,9 @@ import Stats from '@/components/StatsCard/Card';
 import Services from '@/components/AdvantCard/Card';
 import Cta from '@/components/ActionCard/Card';
 import Monitor from '@/components/AnaliticCard/Card';
+import Levels from '@/components/ServiceCard/Card';
 
 import Why from '@/components/why/why';
-import Levels from '@/components/levels/levels';
 import How from '@/components/how/how';
 import Corps from '@/components/corps/corps';
 import FAQ from '@/components/faq/faq';
@@ -160,6 +160,49 @@ export default function Page() {
       "info": "Brendiniz haqqında xəbərləri izləyin və WhatsApp vasitəsilə anında bildirişlər alın."
     }
   ];
+  const levels = [
+    {
+      "title": "Proqrammatik Reklam (RTB)",
+      "info": "Real vaxtda avtomatlaşdırılmış reklam alışı."
+    },
+    {
+      "title": "Rəqəmsal Kreativ İstehsal",
+      "info": "Banner, video və rich-media hazırlanması."
+    },
+    {
+      "title": "DOOH Reklam (Outdoor)",
+      "info": "LED və açıq hava ekranlarında reklam."
+    },
+    {
+      "title": "Reklam İdarəsi və Analitika",
+      "info": "Kampaniyaların performans izlənməsi."
+    },
+    {
+      "title": "DMP (Data Management Platform)",
+      "info": "Məlumatların idarəsi və hədəflənməsi."
+    },
+    {
+      "title": "Meta, TikTok, DV360 dəstəyi",
+      "info": "Qlobal platformalarla tam inteqrasiya."
+    },
+    {
+      "title": "Media Monitoring",
+      "info": "Brendiniz barədə medianı izləyin."
+    },
+    {
+      "title": "Universal Pixel",
+      "info": "Çoxkanallı izləmə və dəqiq hesabatlar."
+    },
+    {
+      "title": "Çapraz-Kanal Retargeting",
+      "info": "LED ekran + sosial media reklamı birləşməsi."
+    },
+    {
+      "title": "Outdoor izləmə və sayma",
+      "info": "Ətraf auditoriyanın real vaxt ölçümü."
+    }
+  ];
+
 
   if(!ready) return null;
 
@@ -283,10 +326,7 @@ export default function Page() {
       </div>
       {/* action */}
 
-
-
-
-      {/* services */}
+      {/* monitor */}
       <div className={`section_wrap ${styles.wrap_services} ${styles.wrap_monitor}`}>
         <div className={`main_center`}>
           <div className={`${styles.sect_header} sect_header`}>
@@ -317,14 +357,84 @@ export default function Page() {
           </div>
         </div>
       </div>
-      {/* services */}
+      {/* monitor */}
 
+      {/* Levels */}
+      <div className={`section_wrap ${styles.wrap_levels}`}>
+        <div className={`main_center`}>
+          <div className={`${styles.flex_body} gap_32`}>
+            <div className={`${styles.sect_header} sect_header`}>
+              <div className={`${styles.sect_title_category} sect_title_category`}>Digix</div>
+              <h4 className={`${styles.sect_title} sect_title`}>Xidmətlərimiz</h4>
+              <p className="sect_info ">
+                Digix reklam platforması ilə biznesinizi böyütmək üçün ən müasir rəqəmsal həlləri təqdim edirik.
+              </p>
+            </div>
+            <div className={`${styles.sect_body} sect_body`}>
+              <div className={`${styles.row_item} ${styles.gap_32} row_item gap_32`}>
+
+                {Array.isArray(levels) &&
+                  levels.map((level, index) => (
+                    <div className={`${styles.col_item} col_item`} key={index}>
+                      <div className={`${styles.col_in} col_in`}>
+                        <Levels key={index}
+                          title={level.title}
+                          info={level.info}
+                        />
+                      </div>
+                    </div>
+                  ))}
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      {/* Levels */}
+
+      {/* Safety */}
+      <div className={`section_wrap ${styles.wrap_safety}`}>
+        <div className={`main_center`}>
+          <div className={`${styles.safety_item}`}>
+            <h4 className={`${styles.safety_title} `}>Brand Safety & Security</h4>
+            <p className={`${styles.safety_info} `}>
+              Digix Azərbaycanda IAS və DoubleVerify tətbiq edən ilk platformadır. Yüksək təhlükəsizlik standartları ilə brend reputasiyanızı hər reklam yerləşdirilməsində qoruyuruq
+            </p>
+          </div>
+        </div>
+      </div>
+      {/* Safety */}
+
+      {/* Safety */}
+      <div className={`section_wrap ${styles.wrap_start}`}>
+        <div className={`main_center`}>
+          <div className={`${styles.sect_header} sect_header`}>
+            <h4 className={`${styles.sect_title} sect_title text_center`}>Digix-ə qoşul və reklamına başla</h4>
+            <p className="sect_info text_center">
+              Sizi reklamverən və yayımlayıcılardan bir addım ayırır. Sadəcə qeydiyyatdan keç, kampaniyalarını rahatlıqla idarə et, real nəticə əldə et və gəlirlərini artır.
+            </p>
+            <div className={`${styles.btn_sect} btn_sect`}>
+              <a href="#" className={`${styles.btn_item} btn_item primary`} ><span>İndi başla</span></a>
+            </div>
+          </div>
+          <div className={`${styles.start_cover}`}>
+            <img src="/assets/images/start_cover.png" alt="Start" />
+          </div>
+
+        </div>
+      </div>
+      {/* Safety */}
+
+
+
+
+      {/* <Levels />
       <Why />
-      <Levels />
       <How />
       <Corps />
       <FAQ />
-      <Form />
+      <Form /> */}
+
     </div>
   );
 }

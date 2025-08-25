@@ -168,6 +168,41 @@
 }
 
 
+.card_revers .metric_card {
+    left: auto;
+    bottom: 20%;
+    right: -12%;
+}
+
+.card_dark .metric_card {
+    background: var(--background-bg-primary, #111827);
+}
+
+
+.card_dark .metric_value {
+    color: #F9FAFB;
+}
+
+
+.card_dark .metric_label {
+    color: #9CA3AF;
+}
+
+.card_dark .metric_delta {
+    color: var(--semantic-success-700, #BBF7D0);
+}
+
+.card_dark .metric_delta.is_up {
+    background: #1f7a43;
+}
+
+.card_dark .metric_delta.is_down {
+    background: #b3261e;
+}
+
+.card_dark .metric_delta.is_neutral {
+    background: #3a3f4b;
+}
 
 /* KART */
 .metric_card {
@@ -178,17 +213,18 @@
     gap: 4px;
     position: absolute;
     bottom: 20%;
-    right: -12%;
+    left: -12%;
     margin-left: auto;
     padding: 24px;
-    color: var(--semantic-success-700, #BBF7D0);
+    color: var(--semantic-success-700, #111827);
     font-size: 12px;
     font-style: normal;
     font-weight: 500;
     line-height: 1.5;
     white-space: nowrap;
+    z-index: 3;
     border: 6px solid rgba(255, 255, 255, 0.32);
-    background: var(--background-bg-primary, #111827);
+    background: var(--background-bg-primary, #fff);
     box-shadow: 0 12px 15px -4px rgba(18, 26, 43, 0.10), 0 4px 6px -4px rgba(18, 26, 43, 0.05);
     border-radius: var(--Radius-lg, 10px);
     -webkit-border-radius: var(--Radius-lg, 10px);
@@ -198,7 +234,7 @@
 }
 
 /* Kənardakı yüngül “halo” effekti */
-.metric_card::after {
+/* .metric_card::after {
     content: "";
     position: absolute;
     inset: -4px;
@@ -206,7 +242,7 @@
     background: rgba(255, 255, 255, 0.16);
     filter: blur(8px);
     z-index: -1;
-}
+} */
 
 /* BAŞLIQ SƏRTİ */
 .metric_head {
@@ -223,7 +259,7 @@
     position: relative;
     min-height: 24px;
     padding-left: 32px;
-    color: var(--text-placeholder, #9CA3AF);
+    color: var(--text-placeholder, #6B7280);
     font-size: 14px;
     font-style: normal;
     font-weight: 500;
@@ -247,7 +283,7 @@
 .metric_delta {
     margin-left: auto;
     padding: 2px 10px;
-    color: var(--semantic-success-700, #BBF7D0);
+    color: var(--semantic-success-700, #6B7280);
     font-size: 12px;
     font-style: normal;
     font-weight: 500;
@@ -261,22 +297,25 @@
 }
 
 .metric_delta.is_up {
-    background: #1f7a43;
+    border: 1px solid var(--semantic-success-200, #BBF7D0);
+    background: var(--semantic-success-50, #F0FDF4);
 }
 
 .metric_delta.is_down {
-    background: #b3261e;
+    border: 1px solid var(--semantic-success-200, #ffbbb7);
+    background: var(--semantic-success-50, #ffe8e7);
 }
 
 .metric_delta.is_neutral {
-    background: #3a3f4b;
+    border: 1px solid var(--semantic-success-200, #b8ccfd);
+    background: var(--semantic-success-50, #e8efff);
 }
 
 /* DƏYƏR */
 .metric_value {
     display: block;
     width: 100%;
-    color: var(--text-heading-primary, #F9FAFB);
+    color: var(--text-heading-primary, #111827);
     font-size: 30px;
     font-style: normal;
     font-weight: 500;
@@ -311,8 +350,15 @@
 
     .metric_card {
         bottom: 4%;
-        right: 4%;
+        left: -4%;
     }
+
+    .card_revers .metric_card {
+        bottom: 4%;
+        right: 4%;
+        left: auto;
+    }
+
 
 }
 
@@ -336,7 +382,13 @@
 
     .metric_card {
         bottom: 4%;
+        left: -4%;
+    }
+
+    .card_revers .metric_card {
+        bottom: 4%;
         right: 4%;
+        left: auto;
     }
 
     .item_img {
@@ -399,11 +451,18 @@
 
 
     .metric_card {
+        left: 0;
         bottom: 0;
         right: 0;
         margin-top: 12px;
         position: relative;
         width: 100%;
+    }
+
+    .card_revers .metric_card {
+        bottom: 0;
+        right: 0;
+        left: 0;
     }
 
 }
@@ -467,9 +526,16 @@
     .metric_card {
         bottom: 0;
         right: 0;
+        left: 0;
         margin-top: 12px;
         position: relative;
         width: 100%;
+    }
+
+    .card_revers .metric_card {
+        bottom: 0;
+        right: 0;
+        left: 0;
     }
 
 }

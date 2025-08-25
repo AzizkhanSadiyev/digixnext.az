@@ -422,7 +422,7 @@ body {
 }
 
 .text_center {
-  justify-content: center;
+  justify-content: center !important;
   text-align: center !important;
 }
 
